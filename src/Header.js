@@ -9,13 +9,20 @@ const Header = () => {
       <div
         className={styles.LogoHolder}
       >
-
+        <div
+          className={styles.LogoLineLeft}
+        />
+        <a href="/en">
+          <img
+            className={styles.Logo}
+            src="/images/header-logo-large.png"
+            alt="logo"
+          />
+        </a>
       </div>
       <div
         className={styles.TopMenu}
-      >
-
-      </div>
+      />
     </div>
   )
 };
