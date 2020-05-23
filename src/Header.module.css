@@ -1,0 +1,12 @@
+.Header {
+  background-color: #ffffff;
+  color: grey;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+
+  height: 110px;
+  width: 100%;
+  border-bottom: 2px solid #f0273a;
+}

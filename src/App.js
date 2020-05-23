@@ -1,12 +1,11 @@
 import React from 'react';
-import './App.css';
+import Header from './Header';
+import styles from './App.module.css';
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        Gach co Bat Trang - A brick!
-      </header>
+    <div className={styles.App}>
+      <Header />
     </div>
   );
 }
