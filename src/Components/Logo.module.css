@@ -1,0 +1,59 @@
+.Logo {
+  width: 32rem;
+  height: 6.2rem;
+  margin-top: 4.5rem;
+  margin-left: 2.5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.LogoLine {
+  display: flex;
+  list-style: none;
+  margin-bottom: 3px;
+}
+
+.LogoLine1 {
+  flex: 1;
+}
+
+.LogoLine2 {
+  flex: 1;
+}
+
+.Brick {
+  margin: 0 2px;
+  border-radius: 2px;
+  border-radius: 4px;
+}
+
+.RedBrick {
+  flex: 1;
+  background-color: #f0273a;
+}
+
+.WhiteBrick {
+  flex: 1;
+}
+
+.WhiteHalfBrick {
+  flex: 0.5;
+}
+
+.TextBrick {
+  color: #ffffff;
+  font-size: 2rem;
+  font-weight: 500;
+  line-height: 2.6rem;
+
+  display: flex;
+  justify-content: flex-end;
+}
+
+.Text {
+  flex: 1;
+  color: black;
+  font-size: 2rem;
+  font-weight: 500;
+  line-height: 2.6rem;
+}
