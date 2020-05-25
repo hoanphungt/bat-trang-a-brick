@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import styles from './Header.module.css';
 
 const Header = () => {
@@ -10,7 +11,7 @@ const Header = () => {
         className={styles.LogoHolder}
       >
         <div className={styles.LogoLineLeft}/>
-        <a href="/en">
+        <a href="/">
           <img
             className={styles.Logo}
             src="/images/header-logo-large.png"
@@ -25,10 +26,10 @@ const Header = () => {
         <ul
           className={styles.TopMenuContent}
         >
-          <li>BRICKS</li>
-          <li>MACHINES</li>
-          <li>ABOUT US</li>
-          <li>CONTACT</li>
+          <li><Link to='/bricks'>BRICKS</Link></li>
+          <li><Link to='/machines'>MACHINES</Link></li>
+          <li><Link to='/aboutus'>ABOUT US</Link></li>
+          <li><Link to='/contact'>CONTACT</Link></li>
         </ul>
       </div>
       <div

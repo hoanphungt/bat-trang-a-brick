@@ -1,4 +1,7 @@
 .App {
+  color: #4e4d4e;
   background-color: #ffffff;
-  color: grey;
+
+  display: flex;
+  flex-direction: column;
 }

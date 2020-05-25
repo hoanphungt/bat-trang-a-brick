@@ -1,0 +1,30 @@
+.HomePhoto {
+  margin-top: 1rem;
+
+  position: relative;
+  height: 46rem;
+  width: 100%;
+
+  background: url(/images/amsterdam.jpg);
+  background-size: cover;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.HomePhotoScrolling {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.HomePhotoScrolling a {
+  text-decoration: none;
+}
+
+.ScrollingIcon {
+  margin-bottom: -3rem;
+  width: 10rem;
+}

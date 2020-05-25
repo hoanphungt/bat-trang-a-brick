@@ -43,7 +43,6 @@
 
 .TopMenu {
   margin: 70px auto 0 48rem;
-  /* border: 1px solid grey; */
 }
 
 .TopMenuContent {
@@ -56,6 +55,11 @@
   font-size: 2rem;
   padding: 0 7px;
   cursor: pointer;
+}
+
+.TopMenuContent li a {
+  color: inherit;
+  text-decoration: none;
 }
 
 .LogoYear {
