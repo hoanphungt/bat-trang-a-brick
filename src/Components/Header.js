@@ -11,13 +11,13 @@ const Header = () => {
         className={styles.LogoHolder}
       >
         <div className={styles.LogoLineLeft}/>
-        <a href="/">
+        <Link to='/'>
           <img
             className={styles.Logo}
             src="/images/header-logo-large.png"
             alt="logo"
           />
-        </a>
+        </Link>
         <div className={styles.LogoLineRight}/>
       </div>
       <div
