@@ -1,6 +1,7 @@
 .Header {
+  color: #4e4d4e;
   background-color: #ffffff;
-  color: grey;
+
   position: fixed;
   top: 0;
   left: 0;
@@ -14,11 +15,13 @@
 }
 
 .LogoHolder {
-  display: flex;
-  width: 100%;
   position: absolute;
   top: 0;
   left: 0;
+  z-index: -1;
+
+  display: flex;
+  width: 100%;
 }
 
 .Logo {
@@ -44,12 +47,33 @@
 }
 
 .TopMenuContent {
-  display: flex;
   list-style: none;
-  color: #4e4d4e;
+
+  display: flex;
 }
 
 .TopMenuContent li {
-  padding: 0 7px;
   font-size: 2rem;
+  padding: 0 7px;
+  cursor: pointer;
+}
+
+.LogoYear {
+  font-size: 1rem;
+  position: absolute;
+  top: 8.5rem;
+  right: 1rem;
+}
+
+.Language {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  font-size: 1.1rem;
+}
+
+.Language img {
+  width: 2rem;
+  margin-left: 4px;
+  cursor: pointer;
 }

@@ -31,6 +31,17 @@ const Header = () => {
           <li>CONTACT</li>
         </ul>
       </div>
+      <div
+        className={styles.LogoYear}
+      >
+        Since1993
+      </div>
+      <div
+        className={styles.Language}
+      >
+        SELECT YOUR LANGUAGE
+        <img src="/images/flags/uk.png" alt="English"/>
+      </div>
     </div>
   )
 };
