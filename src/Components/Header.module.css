@@ -40,7 +40,7 @@
 
 .TopMenu {
   margin: 70px auto 0 48rem;
-  border: 1px solid grey;
+  /* border: 1px solid grey; */
 }
 
 .TopMenuContent {
@@ -50,5 +50,6 @@
 }
 
 .TopMenuContent li {
-  padding: 0 5px;
+  padding: 0 7px;
+  font-size: 2rem;
 }
