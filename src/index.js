@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { BrowserRouter as Router } from "react-router-dom";
+import ScrollToTop from './Components/ScrollToTop';
 import App from './App';
 import './index.css';
 
@@ -38,6 +39,7 @@ ReactDOM.render(
     value={intl}
   >
     <Router>
+      <ScrollToTop />
       <App />
     </Router>
   </RawIntlProvider>,
