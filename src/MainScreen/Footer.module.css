@@ -46,3 +46,7 @@
   text-decoration: none;
   margin-left: 2px;
 }
+
+.Language {
+  cursor: pointer;
+}

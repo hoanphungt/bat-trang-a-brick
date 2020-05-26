@@ -3,6 +3,8 @@ import { Link } from 'react-router-dom';
 import styles from './Footer.module.css';
 
 const Footer = () => {
+  const preferredLocale = localStorage.getItem('preferred-language');
+
   return (
     <div
       className={styles.Footer}
@@ -34,9 +36,42 @@ const Footer = () => {
           <span>Hanoi</span>
           <span>Vietnam</span>
           <br/>
-          <span>gachcobattrang@gmail.com</span>
+          <a href="mailto:gachcobattrang@gmail.com" target="blank">
+            gachcobattrang@gmail.com
+          </a>
           <br/>
-          <span>Tel: +84 (0) 916082546</span>
+          <a href="tel:+84916082546">
+            Tel: +84 (0) 916082546
+          </a>
+        </div>
+        <div
+          className={styles.FooterColumn}
+        >
+          <span>Select your language</span>
+          <br/>
+          <br/>
+          <span
+            className={styles.Language}
+            onClick={() => {
+              if (preferredLocale !== 'en') {
+                localStorage.setItem('preferred-language', 'en');
+                window.location.reload();
+              };
+            }}
+          >
+            English
+          </span>
+          <span
+            className={styles.Language}
+            onClick={() => {
+              if (preferredLocale !== 'vi') {
+                localStorage.setItem('preferred-language', 'vi');
+                window.location.reload();
+              };
+            }}
+          >
+            Vietnamese
+          </span>
         </div>
       </div>
       <div
