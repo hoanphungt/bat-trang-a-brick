@@ -5,6 +5,8 @@ import Slideshow from '../../Components/Slideshow';
 import Team from '../../Components/Team';
 import styles from './Home.module.css';
 
+import { FormattedMessage } from 'react-intl';
+
 const Home = () => {
   return (    
     <MainContainer>
@@ -16,7 +18,7 @@ const Home = () => {
           id='introduction'
           className={styles.Title}
         >
-          Bat Trang Ancient Bricks
+          <FormattedMessage id="home.title" defaultMessage="Bat Trang Ancient Bricks"/>
         </div>
         <div
           className={styles.Separator}
