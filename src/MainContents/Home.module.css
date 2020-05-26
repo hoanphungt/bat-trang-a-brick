@@ -1,0 +1,36 @@
+.MainContent {
+  padding: 0 10%;
+}
+
+.Title {
+  font-size: 5.2rem;
+  font-family: 'Quicksand';
+  font-weight: 300;
+  font-stretch: condensed;
+  text-align: center;
+  padding-top: 1rem;
+  color: grey;
+  width: 100%;
+}
+
+.Separator {
+  margin: 1rem 0;
+  width: 100%;
+  height: 1px;
+  background-color: #e5e5e5;
+}
+
+.Introduction {
+  margin-top: 3rem;
+  width: 100%;
+  text-align: left;
+}
+
+.MainBlock {
+  margin-top: 4rem;
+  width: 100%;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
