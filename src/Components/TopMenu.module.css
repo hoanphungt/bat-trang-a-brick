@@ -9,7 +9,9 @@
 
 .TopMenuContent a {
   font-size: 2rem;
-  color: inherit;
-  text-decoration: none;
   padding: 0 7px;
+}
+
+.TopMenuContent a:hover {
+  color: #f0273a;
 }
