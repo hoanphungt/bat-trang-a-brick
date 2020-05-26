@@ -1,6 +1,7 @@
 import React from 'react';
 import styles from './Team.module.css';
 import slideshowStyles from './Slideshow.module.css';
+import homeStyles from './../MainScreen/MainContents/Home.module.css';
 
 const Team = () => {
   return (
@@ -12,6 +13,9 @@ const Team = () => {
       >
         Team members
       </div>
+      <div
+        className={homeStyles.Separator}
+      />
       <div
         className={styles.Team}
       >

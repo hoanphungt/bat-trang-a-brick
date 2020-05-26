@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import styles from './Slideshow.module.css';
+import homeStyles from './../MainScreen/MainContents/Home.module.css';
 
 const Slideshow = () => {
   // Photos of popular products to show in the slideshow
@@ -95,6 +96,9 @@ const Slideshow = () => {
           </div>
         </div>
       </div>
+      <div
+          className={homeStyles.Separator}
+        />
       <div
         className={styles.Slideshow}
       >

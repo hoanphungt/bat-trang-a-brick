@@ -1,9 +1,9 @@
 import React from 'react';
 import { Route } from 'react-router-dom';
-import Header from './MainContents/Header';
-import Footer from './MainContents/Footer';
-import Home from './MainContents/Home';
-import Bricks from './MainContents/Bricks';
+import Header from './MainScreen/Header';
+import Footer from './MainScreen/Footer';
+import Home from './MainScreen/MainContents/Home';
+import Bricks from './MainScreen/MainContents/Bricks';
 import styles from './App.module.css';
 
 const App = () => {
