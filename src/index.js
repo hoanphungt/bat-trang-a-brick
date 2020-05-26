@@ -8,21 +8,12 @@ import { createIntl, createIntlCache, RawIntlProvider } from "react-intl";
 import en from './translations/en.json';
 import vi from './translations/vi.json';
 
-// Helper function to get current locale
-const getCurrentLocale = () => {
-  if (!navigator.languages) {
-    return navigator.languages[0];
-  } else {
-    return navigator.language;
-  };
-};
-
-const localeProp = getCurrentLocale();
+const preferredLocale = localStorage.getItem('preferred-language') || 'en';
 
 const cache = createIntlCache();
 const intl = createIntl({
-  locale: localeProp,
-  messages: localeProp === 'vi' ? vi : en
+  locale: preferredLocale,
+  messages: preferredLocale === 'vi' ? vi : en
 }, cache);
 
 ReactDOM.render(
