@@ -1,0 +1,38 @@
+.TeamContainer {
+  flex: 1;
+  margin: 1%;
+}
+
+.Team {
+  margin-top: 0.5rem;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.TeamMember {
+  flex: 1;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.TeamMember img {
+  width: 80%;
+}
+
+.TeamMember .Name {
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin-top: 1rem;
+}
+
+.TeamMember .Position {
+  font-size: 1.2rem;
+  font-weight: normal;
+  color: #f42434;
+}

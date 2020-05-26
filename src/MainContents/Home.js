@@ -1,6 +1,8 @@
 import React from 'react';
 import HomePhoto from '../Components/HomePhoto';
 import MainContainer from './MainContainer';
+import Slideshow from '../Components/Slideshow';
+import Team from '../Components/Team';
 import styles from './Home.module.css';
 
 const Home = () => {
@@ -33,16 +35,8 @@ const Home = () => {
         <div
           className={styles.MainBlock}
         >
-          <div
-            className={styles.PopularProducts}
-          >
-
-          </div>
-          <div
-            className={styles.Team}
-          >
-
-          </div>
+          <Slideshow />
+          <Team />
         </div>
       </div>
     </MainContainer>

@@ -1,0 +1,49 @@
+.SlideshowContainer {
+  flex: 1;
+  margin: 1%;
+}
+
+.SlideshowBar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.SlideshowTitle {
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+.SlideshowButtons {
+  display: flex;
+  flex-direction: row;
+}
+
+.SlideshowButton {
+  font-size: 1.4rem;
+  font-weight: bold;
+  width: 2rem;
+  height: 2rem;
+  margin: 0 2px;
+  border: 1px solid grey;
+  border-radius: 75%;
+  user-select: none;
+  cursor: pointer;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Slideshow {
+  margin-top: 0.5rem;
+  -webkit-transition: all .3s ease-in-out;
+  -moz-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+.SlideshowPhoto {
+  width: 100%;
+  height: auto;
+}
