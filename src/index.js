@@ -5,15 +5,32 @@ import App from './App';
 import './index.css';
 
 import { createIntl, createIntlCache, RawIntlProvider } from "react-intl";
-import en from './translations/en.json';
-import vi from './translations/vi.json';
+import english from './translations/en.json';
+import vietnamese from './translations/vi.json';
 
-const preferredLocale = localStorage.getItem('preferred-language') || 'en';
+// Get current user's locale
+const getCurrentLocale = () => {
+  if (navigator.languages) {
+    return navigator.languages[0];
+  } else {
+    return navigator.language;
+  };
+};
+const currentLocale = getCurrentLocale();
+
+// Set app's language by either current user's locale or their selected language preference
+// currently the app only supports English and Vietnamese with English as default language
+let preferredLocale = localStorage.getItem('preferred-language');
+if (!preferredLocale) {
+  preferredLocale = (
+    currentLocale === 'vi' ? 'vi' : 'en'
+  );
+};
 
 const cache = createIntlCache();
 const intl = createIntl({
   locale: preferredLocale,
-  messages: preferredLocale === 'vi' ? vi : en
+  messages: preferredLocale === 'vi' ? vietnamese : english
 }, cache);
 
 ReactDOM.render(
