@@ -1,14 +1,12 @@
 import React from 'react';
+import MainContainer from './MainContainer';
 // import styles from './Bricks.module.css';
-import homeStyles from './Home.module.css';
 
 const Bricks = () => {
   return (
-    <div
-      className={homeStyles.MainContainer}
-    >
+    <MainContainer>
       This is list of bricks
-    </div>
+    </MainContainer>    
   )
 }
 

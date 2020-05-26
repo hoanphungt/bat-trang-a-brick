@@ -1,0 +1,12 @@
+.Language {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  font-size: 1.1rem;
+}
+
+.Language img {
+  width: 2rem;
+  margin-left: 4px;
+  cursor: pointer;
+}

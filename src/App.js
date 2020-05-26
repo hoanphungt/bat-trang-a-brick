@@ -1,7 +1,7 @@
 import React from 'react';
 import { Route } from 'react-router-dom';
-import Header from './Components/Header';
-import Footer from './Components/Footer';
+import Header from './MainContents/Header';
+import Footer from './MainContents/Footer';
 import Home from './MainContents/Home';
 import Bricks from './MainContents/Bricks';
 import styles from './App.module.css';

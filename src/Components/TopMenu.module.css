@@ -1,0 +1,16 @@
+.TopMenu {
+  margin: 70px auto 0 48rem;
+}
+
+.TopMenuContent {
+  display: flex;
+  flex-direction: row;
+}
+
+.TopMenuContent a {
+  font-size: 2rem;
+  color: inherit;
+  text-decoration: none;
+  padding: 0 7px;
+  cursor: pointer;
+}
