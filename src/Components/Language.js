@@ -20,7 +20,7 @@ const Language = () => {
         }}
       />
       <img
-        src="/images/flags/uk.png"
+        src="/images/flags/vn.png"
         alt="Vietnam"
         onClick={() => {
           if (preferredLocale !== 'vi') {
