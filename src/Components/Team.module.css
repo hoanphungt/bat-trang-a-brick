@@ -1,6 +1,7 @@
 .TeamContainer {
   flex: 1;
   margin: 1%;
+  height: 45rem;
 }
 
 .Team {
@@ -23,6 +24,11 @@
 
 .TeamMember img {
   width: 80%;
+  transition: all 0.2s ease-in-out;
+}
+
+.TeamMember img:hover {
+  width: 90%;
 }
 
 .TeamMember .Name {
