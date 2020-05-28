@@ -3,6 +3,8 @@ import MainContainer from '../MainContainer';
 import styles from './Bricks.module.css';
 import homeStyles from './Home.module.css';
 
+import { FormattedMessage } from 'react-intl';
+
 const Bricks = () => {
   return (
     <MainContainer>
@@ -12,7 +14,9 @@ const Bricks = () => {
         <div
           className={styles.Article}
         >
-          <div className={styles.Title}>Bricks</div>
+          <div className={styles.Title}>
+            <FormattedMessage id="topMenu.bricks" defaultMessage="Bricks" />
+          </div>
           <div
             className={styles.Text}
           >

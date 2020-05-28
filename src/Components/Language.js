@@ -1,6 +1,8 @@
 import React from 'react';
 import styles from './Language.module.css';
 
+import { FormattedMessage } from 'react-intl';
+
 const Language = () => {
   const preferredLocale = localStorage.getItem('preferred-language');
 
@@ -8,7 +10,7 @@ const Language = () => {
     <div
       className={styles.Language}
     >
-      SELECT YOUR LANGUAGE
+      <FormattedMessage id="footer.selectLanguage" defaultMessage="Select your language" />
       <img
         src="/images/flags/uk.png"
         alt="English"

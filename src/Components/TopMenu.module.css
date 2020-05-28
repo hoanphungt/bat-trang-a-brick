@@ -10,6 +10,7 @@
 .TopMenuContent a {
   font-size: 2rem;
   padding: 0 7px;
+  text-transform: uppercase;
 }
 
 .TopMenuContent a:hover {

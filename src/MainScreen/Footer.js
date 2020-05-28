@@ -2,6 +2,8 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import styles from './Footer.module.css';
 
+import { FormattedMessage } from 'react-intl';
+
 const Footer = () => {
   const preferredLocale = localStorage.getItem('preferred-language');
 
@@ -15,26 +17,36 @@ const Footer = () => {
         <div
           className={styles.FooterColumn}
         >
-          <span>Quick Links</span>
+          <span><FormattedMessage id="footer.quickLinks" defaultMessage="Quick links" /></span>
           <br/>
           <br/>
-          <Link to='/'>Home</Link>
-          <Link to='/bricks'>Bricks</Link>
-          <Link to='/machines'>Machines</Link>
-          <Link to='/aboutus'>About Us</Link>
-          <Link to='/contact'>Contact</Link>
+          <Link to='/'>
+            <FormattedMessage id="topMenu.home" defaultMessage="Home" />
+          </Link>
+          <Link to='/bricks'>
+            <FormattedMessage id="topMenu.bricks" defaultMessage="Bricks" />
+          </Link>
+          <Link to='/machines'>          
+            <FormattedMessage id="topMenu.machines" defaultMessage="Machines" />
+          </Link>
+          <Link to='/aboutus'>        
+            <FormattedMessage id="topMenu.aboutUs" defaultMessage="About us" />
+          </Link>
+          <Link to='/contact'>        
+            <FormattedMessage id="topMenu.contact" defaultMessage="Contact" />
+          </Link>
         </div>
         <div
           className={styles.FooterColumn}
         >
-          <span>Contact</span>
+          <span><FormattedMessage id="topMenu.contact" defaultMessage="Contact" /></span>
           <br/>
           <br/>
-          <span>Gach Co Bat Trang Ltd.</span>
-          <span>45 Yen Ninh</span>
-          <span>Ba Dinh district</span>
-          <span>Hanoi</span>
-          <span>Vietnam</span>
+          <span><FormattedMessage id="footer.companyName" defaultMessage="Bat Trang Ancient Bricks Ltd." /></span>
+          <span><FormattedMessage id="footer.add1" defaultMessage="45 Yen Ninh" /></span>
+          <span><FormattedMessage id="footer.add2" defaultMessage="Ba Dinh district" /></span>
+          <span><FormattedMessage id="footer.add3" defaultMessage="Hanoi" /></span>
+          <span><FormattedMessage id="footer.add4" defaultMessage="Vietnam" /></span>
           <br/>
           <a href="mailto:gachcobattrang@gmail.com" target="blank">
             gachcobattrang@gmail.com
@@ -47,7 +59,7 @@ const Footer = () => {
         <div
           className={styles.FooterColumn}
         >
-          <span>Select your language</span>
+          <span><FormattedMessage id="footer.selectLanguage" defaultMessage="Select your language" /></span>
           <br/>
           <br/>
           <span
@@ -59,7 +71,7 @@ const Footer = () => {
               };
             }}
           >
-            English
+            <FormattedMessage id="footer.english" defaultMessage="English" />
           </span>
           <span
             className={styles.Language}
@@ -70,7 +82,7 @@ const Footer = () => {
               };
             }}
           >
-            Vietnamese
+            <FormattedMessage id="footer.vietnamese" defaultMessage="Vietnamese" />
           </span>
         </div>
       </div>
@@ -80,7 +92,7 @@ const Footer = () => {
       <div
         className={styles.FooterCopyright}
       >
-        © Copyright Gach Co Bat Trang Ltd - by
+        © <FormattedMessage id="footer.copyright" defaultMessage="Copyright Gach Co Bat Trang Ltd - by" />
         <a href={'https://github.com/hoanphungt'} target='blank'>HP</a>
       </div>
     </div>

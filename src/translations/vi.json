@@ -1,3 +1,19 @@
 {
-  "home.title": "Gạch cổ Bát Tràng"
+  "footer.quickLinks": "Liên kết",
+  "footer.companyName": "Công ty TNHH Gạch cổ Bát Tràng",
+  "footer.add1": "45 Yên Ninh",
+  "footer.add2": "Ba Đình",
+  "footer.add3": "Hà Nội",
+  "footer.add4": "Việt Nam",
+  "footer.selectLanguage": "Chọn ngôn ngữ",
+  "footer.english": "Tiếng Anh",
+  "footer.vietnamese": "Tiếng Việt",
+  "footer.copyright": "Bản quyền Công ty TNHH Gạch cổ Bát Tràng -",
+  "home.title": "Gạch cổ Bát Tràng",
+  "logo.year": "Từ 1993",
+  "topMenu.home": "Trang chủ",
+  "topMenu.bricks": "Gạch",
+  "topMenu.machines": "Máy CMD",
+  "topMenu.aboutUs": "Giới thiệu",
+  "topMenu.contact": "Liên hệ"
 }
