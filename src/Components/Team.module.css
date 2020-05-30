@@ -22,12 +22,12 @@
 }
 
 .TeamMember img {
-  width: 80%;
+  width: 60%;
   transition: all 0.2s ease-in-out;
 }
 
 .TeamMember img:hover {
-  width: 90%;
+  width: 65%;
 }
 
 .TeamMember .Name {

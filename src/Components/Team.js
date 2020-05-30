@@ -22,7 +22,7 @@ const Team = () => {
         <div
           className={styles.TeamMember}
         >
-          <img src="/images/team/wim.jpg" alt="Wim"/>
+          <img src="/images/team/cam-le.jpg" alt="Mr. Cam"/>
           <div
             className={styles.Name}
           >
@@ -37,7 +37,7 @@ const Team = () => {
         <div
           className={styles.TeamMember}
         >
-          <img src="/images/team/huub.jpg" alt="Huub"/>
+          <img src="/images/team/thuy-nguyen.jpg" alt="Mrs. Thuy"/>
           <div
             className={styles.Name}
           >
@@ -56,7 +56,7 @@ const Team = () => {
         <div
           className={styles.TeamMember}
         >
-          <img src="/images/team/philip.jpg" alt="Wim"/>
+          <img src="/images/team/van-le-2.jpg" alt="Ms. Van"/>
           <div
             className={styles.Name}
           >
@@ -71,7 +71,7 @@ const Team = () => {
         <div
           className={styles.TeamMember}
         >
-          <img src="/images/team/sep.jpg" alt="Wim"/>
+          <img src="/images/team/van-le.jpg" alt="Hau"/>
           <div
             className={styles.Name}
           >
