@@ -66,7 +66,7 @@ const Bricks = () => {
                 <div
                   className={styles.Product}
                   style={{
-                    backgroundImage: `url(${brick.brickUrl})`
+                    backgroundImage: `url(${brick.urls.brickUrl})`
                   }}
                 />
                 <div
