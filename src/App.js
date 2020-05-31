@@ -29,7 +29,10 @@ const App = () => {
       <Route exact path={'/contact'} component={Contact} />
       <Footer />
       {/* Modal background and mobile menu components */}
-      <ModalBackground mobileMenu={mobileMenu} />
+      <ModalBackground
+        mobileMenu={mobileMenu}
+        setMobileMenu={setMobileMenu}
+      />
       <MobileMenu
         mobileMenu={mobileMenu}
         setMobileMenu={setMobileMenu}

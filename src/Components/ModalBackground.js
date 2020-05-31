@@ -8,6 +8,7 @@ const ModalBackground = (props) => {
         ${styles.ModalBackground}
         ${props.mobileMenu ? styles.VisibleModalBackground : ''}
       `}
+      onClick={() => props.setMobileMenu(false)}
     />
   )
 }

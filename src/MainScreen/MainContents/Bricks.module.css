@@ -7,6 +7,12 @@
   margin-bottom: 1rem;
 }
 
+@media only screen and (max-width: 600px) {
+  .Title {
+    font-size: 2.5rem;
+  }
+}
+
 .ProductFilter > button {
   font-size: 1.4rem;
   font-weight: bold;

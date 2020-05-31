@@ -76,7 +76,7 @@ const MobileMenu = (props) => {
             };
           }}
         >
-          EN
+          <FormattedMessage id="footer.english" defaultMessage="EN"/>
         </span>
         <span
           className={styles.MenuLink}
@@ -88,7 +88,7 @@ const MobileMenu = (props) => {
             };
           }}
         >
-          VN
+          <FormattedMessage id="footer.vietnamese" defaultMessage="VN"/>
         </span>
       </div>
     </div>
