@@ -36,6 +36,9 @@
 }
 
 @media only screen and (max-width: 600px) {
+  .Title {
+    font-size: 3rem;
+  }
   .MainBlock {
     flex-direction: column;
   }

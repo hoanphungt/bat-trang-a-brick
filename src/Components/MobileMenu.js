@@ -40,28 +40,28 @@ const MobileMenu = (props) => {
         </Link>
         <Link
           className={styles.MenuLink}
-          to='/'
+          to='/bricks'
           onClick={closeMobileMenu}
         >
           <FormattedMessage id="topMenu.bricks" defaultMessage="Bricks" />
         </Link>
         <Link
           className={styles.MenuLink}
-          to='/'
+          to='/machines'
           onClick={closeMobileMenu}
         >
           <FormattedMessage id="topMenu.machines" defaultMessage="Machines" />
         </Link>
         <Link
           className={styles.MenuLink}
-          to='/'
+          to='/aboutus'
           onClick={closeMobileMenu}
         >
           <FormattedMessage id="topMenu.aboutUs" defaultMessage="About us" />
         </Link>
         <Link
           className={styles.MenuLink}
-          to='/'
+          to='/contact'
           onClick={closeMobileMenu}
         >
           <FormattedMessage id="topMenu.contact" defaultMessage="Contact" />
