@@ -17,8 +17,7 @@ const Footer = () => {
         <div
           className={styles.FooterColumn}
         >
-          <span><FormattedMessage id="footer.quickLinks" defaultMessage="Quick links" /></span>
-          <br/>
+          <span><b><FormattedMessage id="footer.quickLinks" defaultMessage="Quick links" /></b></span>
           <br/>
           <Link to='/'>
             <FormattedMessage id="topMenu.home" defaultMessage="Home" />
@@ -37,10 +36,9 @@ const Footer = () => {
           </Link>
         </div>
         <div
-          className={styles.FooterColumn}
+          className={`${styles.FooterColumn} ${styles.FooterColumnContact}`}
         >
-          <span><FormattedMessage id="topMenu.contact" defaultMessage="Contact" /></span>
-          <br/>
+          <span><b><FormattedMessage id="topMenu.contact" defaultMessage="Contact" /></b></span>
           <br/>
           <span><FormattedMessage id="footer.companyName" defaultMessage="Bat Trang Ancient Bricks Ltd." /></span>
           <span><FormattedMessage id="footer.add1" defaultMessage="45 Yen Ninh" /></span>
@@ -59,31 +57,45 @@ const Footer = () => {
         <div
           className={styles.FooterColumn}
         >
-          <span><FormattedMessage id="footer.selectLanguage" defaultMessage="Select your language" /></span>
+          <span><b><FormattedMessage id="footer.socialMedia" defaultMessage="Be Sociable" /></b></span>
+          <br/>
+          <div
+            className={styles.SocialIcons}
+          >
+            <a
+              className="fa fa-facebook-square"
+              href="https://www.facebook.com/CongtyTNHHGachCoBatTrang"
+              target="blank"
+            >
+            </a>
+          </div>
           <br/>
           <br/>
-          <span
-            className={styles.Language}
-            onClick={() => {
-              if (preferredLocale !== 'en') {
-                localStorage.setItem('preferred-language', 'en');
-                window.location.reload();
-              };
-            }}
+          <span><b><FormattedMessage id="footer.selectLanguage" defaultMessage="Select your language" /></b></span>
+          <div
+            className={styles.LanguageSelection}
           >
-            <FormattedMessage id="footer.english" defaultMessage="English" />
-          </span>
-          <span
-            className={styles.Language}
-            onClick={() => {
-              if (preferredLocale !== 'vi') {
-                localStorage.setItem('preferred-language', 'vi');
-                window.location.reload();
-              };
-            }}
-          >
-            <FormattedMessage id="footer.vietnamese" defaultMessage="Vietnamese" />
-          </span>
+            <img
+              src="/images/flags/uk.png"
+              alt="English"
+              onClick={() => {
+                if (preferredLocale !== 'en') {
+                  localStorage.setItem('preferred-language', 'en');
+                  window.location.reload();
+                };
+              }}
+            />
+            <img
+              src="/images/flags/vn.png"
+              alt="Vietnam"
+              onClick={() => {
+                if (preferredLocale !== 'vi') {
+                  localStorage.setItem('preferred-language', 'vi');
+                  window.location.reload();
+                };
+              }}
+            />
+          </div>
         </div>
       </div>
       <div
