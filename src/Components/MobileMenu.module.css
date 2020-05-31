@@ -1,5 +1,5 @@
 .Menu {
-  min-width: 30%;
+  min-width: 40%;
   height: 100%;
   position: absolute;
   top: 0;
@@ -15,7 +15,42 @@
   left: 0;
 }
 
+.MenuHeader {
+  height: 7rem;
+  border-bottom: 1px solid #efefef;
+  cursor: pointer;
+
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.MenuClose {
+  font-size: 3rem;
+  padding-right: 2rem;
+  color: grey;
+  cursor: pointer;
+}
+
+.MenuClose:hover {
+  color: #f42434;
+}
+
 .MenuNav {
   display: flex;
   flex-direction: column;
+}
+
+.MenuNav > .MenuLink {
+  font-size: 1.6rem;
+  padding: 1rem;
+  margin-left: 2rem;
+  color: #818181;
+  border-bottom: 1px solid #efefef;
+  cursor: pointer;
+}
+
+.MenuNav > .MenuLink:hover {
+  color: #ffffff;
+  background-color: #f42434;
 }

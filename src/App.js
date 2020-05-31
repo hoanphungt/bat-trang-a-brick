@@ -8,13 +8,13 @@ import Brick from './MainScreen/MainContents/Brick';
 import Machines from './MainScreen/MainContents/Machines';
 import AboutUs from './MainScreen/MainContents/AboutUs';
 import Contact from './MainScreen/MainContents/Contact';
-import styles from './App.module.css';
 import MobileMenu from './Components/MobileMenu';
 import ModalBackground from './Components/ModalBackground';
+import styles from './App.module.css';
 
 const App = () => {
   const [mobileMenu, setMobileMenu] = useState(false);
-  
+
   return (
     <div className={styles.App}>
       <Header

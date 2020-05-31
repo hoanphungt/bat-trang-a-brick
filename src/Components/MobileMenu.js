@@ -5,6 +5,12 @@ import styles from './MobileMenu.module.css';
 import { FormattedMessage } from 'react-intl';
 
 const MobileMenu = (props) => {
+  const preferredLocale = localStorage.getItem('preferred-language');
+
+  const closeMobileMenu = () => {
+    props.setMobileMenu(false);
+  };
+
   return (
     <div
       className={`
@@ -14,32 +20,76 @@ const MobileMenu = (props) => {
     >
       <div
         className={styles.MenuHeader}
+        onClick={closeMobileMenu}
       >
-        <button
-          className={styles.CloseButton}
-          onClick={() => props.setMobileMenu(false)}
+        <div
+          className={styles.MenuClose}
         >
-          x
-        </button>
+          X
+        </div>
       </div>
       <div
         className={styles.MenuNav}
       >
-        <Link to='/'>
+        <Link
+          className={styles.MenuLink}
+          to='/'
+          onClick={closeMobileMenu}
+        >
           <FormattedMessage id="topMenu.home" defaultMessage="Home" />
         </Link>
-        <Link to='/bricks'>
+        <Link
+          className={styles.MenuLink}
+          to='/'
+          onClick={closeMobileMenu}
+        >
           <FormattedMessage id="topMenu.bricks" defaultMessage="Bricks" />
         </Link>
-        <Link to='/machines'>          
+        <Link
+          className={styles.MenuLink}
+          to='/'
+          onClick={closeMobileMenu}
+        >
           <FormattedMessage id="topMenu.machines" defaultMessage="Machines" />
         </Link>
-        <Link to='/aboutus'>        
+        <Link
+          className={styles.MenuLink}
+          to='/'
+          onClick={closeMobileMenu}
+        >
           <FormattedMessage id="topMenu.aboutUs" defaultMessage="About us" />
         </Link>
-        <Link to='/contact'>        
+        <Link
+          className={styles.MenuLink}
+          to='/'
+          onClick={closeMobileMenu}
+        >
           <FormattedMessage id="topMenu.contact" defaultMessage="Contact" />
         </Link>
+        <span
+          className={styles.MenuLink}
+          onClick={() => {
+            closeMobileMenu();
+            if (preferredLocale !== 'en') {
+              localStorage.setItem('preferred-language', 'en');
+              window.location.reload();
+            };
+          }}
+        >
+          EN
+        </span>
+        <span
+          className={styles.MenuLink}
+          onClick={() => {
+            closeMobileMenu();
+            if (preferredLocale !== 'vi') {
+              localStorage.setItem('preferred-language', 'vi');
+              window.location.reload();
+            };
+          }}
+        >
+          VN
+        </span>
       </div>
     </div>
   );
