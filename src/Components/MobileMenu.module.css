@@ -1,0 +1,21 @@
+.Menu {
+  min-width: 30%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: -100%;
+  z-index: 6000;
+  background-color: #ffffff;
+  border: 1px solid #ccc;
+  box-shadow: 3px 0px 5px 0px rgba(0, 0, 0, 0.4);
+  transition: all .6s ease-in-out;
+}
+
+.VisibleMenu {
+  left: 0;
+}
+
+.MenuNav {
+  display: flex;
+  flex-direction: column;
+}

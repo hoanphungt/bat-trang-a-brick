@@ -24,3 +24,9 @@
   width: 28rem;
   margin: 4.5rem 3px 0 3px;
 }
+
+.LogoMobile {
+  max-width: 20rem;
+  margin-top: 2rem;
+  margin-left: 2rem;
+}

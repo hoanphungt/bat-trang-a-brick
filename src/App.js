@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Route } from 'react-router-dom';
 import Header from './MainScreen/Header';
 import Footer from './MainScreen/Footer';
@@ -9,11 +9,18 @@ import Machines from './MainScreen/MainContents/Machines';
 import AboutUs from './MainScreen/MainContents/AboutUs';
 import Contact from './MainScreen/MainContents/Contact';
 import styles from './App.module.css';
+import MobileMenu from './Components/MobileMenu';
+import ModalBackground from './Components/ModalBackground';
 
 const App = () => {
+  const [mobileMenu, setMobileMenu] = useState(false);
+  
   return (
     <div className={styles.App}>
-      <Header />
+      <Header
+        mobileMenu={mobileMenu}
+        setMobileMenu={setMobileMenu}
+      />
       <Route exact path={'/'} component={Home} />
       <Route exact path={'/bricks'} component={Bricks} />
       <Route exact path={'/bricks/:id'} component={Brick} />
@@ -21,6 +28,12 @@ const App = () => {
       <Route exact path={'/aboutus'} component={AboutUs} />
       <Route exact path={'/contact'} component={Contact} />
       <Footer />
+      {/* Modal background and mobile menu components */}
+      <ModalBackground mobileMenu={mobileMenu} />
+      <MobileMenu
+        mobileMenu={mobileMenu}
+        setMobileMenu={setMobileMenu}
+      />
     </div>
   );
 }

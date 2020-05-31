@@ -1,5 +1,5 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import MainContainer from '../MainContainer';
 import styles from './Bricks.module.css';
 import homeStyles from './Home.module.css';
@@ -58,7 +58,7 @@ const Bricks = () => {
             className={styles.ProductList}
           >
             {Object.values(allBricks).map(brick => (
-              <NavLink
+              <Link
                 to={`/bricks/${brick.id}`}
                 className={styles.ProductWrapper}
                 key={brick.id}
@@ -81,7 +81,7 @@ const Bricks = () => {
                     {brick.name}
                   </div>
                 </div>
-              </NavLink>
+              </Link>
             ))}
           </div>
         </div>

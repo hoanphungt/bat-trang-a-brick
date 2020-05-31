@@ -16,3 +16,7 @@
 .TopMenuContent a:hover {
   color: #f0273a;
 }
+
+.ActiveNav {
+  color: #f0273a;
+}

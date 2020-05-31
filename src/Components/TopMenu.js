@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import styles from './TopMenu.module.css';
 
 import { FormattedMessage } from 'react-intl';
@@ -12,18 +12,18 @@ const TopMenu = () => {
       <div
         className={styles.TopMenuContent}
       >
-        <Link to='/bricks'>
+        <NavLink to='/bricks' activeClassName={styles.ActiveNav}>
           <FormattedMessage id="topMenu.bricks" defaultMessage="Bricks" />
-        </Link>
-        <Link to='/machines'>          
+        </NavLink>
+        <NavLink to='/machines' activeClassName={styles.ActiveNav}>          
           <FormattedMessage id="topMenu.machines" defaultMessage="Machines" />
-        </Link>
-        <Link to='/aboutus'>        
+        </NavLink>
+        <NavLink to='/aboutus' activeClassName={styles.ActiveNav}>        
           <FormattedMessage id="topMenu.aboutUs" defaultMessage="About us" />
-        </Link>
-        <Link to='/contact'>        
+        </NavLink>
+        <NavLink to='/contact' activeClassName={styles.ActiveNav}>        
           <FormattedMessage id="topMenu.contact" defaultMessage="Contact" />
-        </Link>
+        </NavLink>
       </div>
     </div>
   )
