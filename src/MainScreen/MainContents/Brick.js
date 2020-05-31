@@ -74,7 +74,7 @@ const Brick = (props) => {
               <span
                 className={styles.ProductTitle}
               >
-                Specificiations
+                Specs
               </span>
               <br/>
               <span

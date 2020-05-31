@@ -81,3 +81,23 @@
   font-size: 1.8rem;
   font-weight: bold;
 }
+
+@media only screen and (max-width: 600px) {
+  .ProductPhotos {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .SidePhotos {
+    width: 90%;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .SidePhotos > img {
+    width: 25%;
+    padding: 5px;
+  }
+}
