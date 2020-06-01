@@ -51,6 +51,7 @@
 .ProductDetails {
   width: 100%;
   margin-top: 3rem;
+
   display: flex;
   flex-direction: row;
 }
@@ -58,7 +59,6 @@
 .ProductIntro {
   flex: 3;
   padding: 0 1rem;
-  text-align: justify;
 
   display: flex;
   flex-direction: column;
