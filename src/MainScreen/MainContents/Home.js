@@ -26,13 +26,13 @@ const Home = () => {
         <div
           className={styles.Introduction}
         >
-          <span>Welcome to the colourful world of clay bricks. Bat Trang Ancient Bricks is the leading supplier and producer of high-quality clay bricks and brick slips. </span>
-          <span>By working with carefully selected international partners, we ensure that our products find their way all over the world.</span>
+          <span><FormattedMessage id="home.intro-text1" defaultMessage="Welcome to the colourful world of clay bricks. Bat Trang Ancient Bricks is the leading supplier and producer of high-quality clay bricks and brick slips. " /></span>
+          <span><FormattedMessage id="home.intro-text2" defaultMessage="By working with carefully selected international partners, we ensure that our products find their way all over the world." /></span>
           <br/>
           <br/>
-          <span>Clay brick and clay brick slips stand out from other bricks by their colour, shape and texture. </span>
-          <span>The hand-formed bricks and brick slips are warm, stylish and made of 100% natural clay. </span>
-          <span>This eco-friendly and  durable building material also lasts a long time. Our products can be used both indoors and outdoors.</span>
+          <span><FormattedMessage id="home.intro-text3" defaultMessage="Clay brick and clay brick slips stand out from other bricks by their colour, shape and texture. " /></span>
+          <span><FormattedMessage id="home.intro-text4" defaultMessage="The hand-formed bricks and brick slips are warm, stylish and made of 100% natural clay. " /></span>
+          <span><FormattedMessage id="home.intro-text5" defaultMessage="This eco-friendly and  durable building material also lasts a long time. Our products can be used both indoors and outdoors." /></span>
         </div>
         <div
           className={styles.MainBlock}

@@ -2,6 +2,8 @@ import React, { useState, useEffect } from 'react';
 import styles from './Slideshow.module.css';
 import homeStyles from './../MainScreen/MainContents/Home.module.css';
 
+import { FormattedMessage } from 'react-intl';
+
 const Slideshow = () => {
   // Photos of popular products to show in the slideshow
   const photos = {
@@ -77,7 +79,7 @@ const Slideshow = () => {
         <div
           className={styles.SlideshowTitle}
         >
-          Popular products
+          <FormattedMessage id="home.popularProducts" defaultMessage="Popular products"/>
         </div>
         <div
           className={styles.SlideshowButtons}

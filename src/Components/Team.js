@@ -3,6 +3,8 @@ import styles from './Team.module.css';
 import slideshowStyles from './Slideshow.module.css';
 import homeStyles from './../MainScreen/MainContents/Home.module.css';
 
+import { FormattedMessage } from 'react-intl';
+
 const Team = () => {
   return (
     <div
@@ -11,7 +13,7 @@ const Team = () => {
       <div
         className={slideshowStyles.SlideshowTitle}
       >
-        Team members
+        <FormattedMessage id="team.teamMembers" defaultMessage="Team members"/>
       </div>
       <div
         className={homeStyles.Separator}
@@ -26,12 +28,12 @@ const Team = () => {
           <div
             className={styles.Name}
           >
-            Le Thu Cam
+            <FormattedMessage id="team.chairman-name" defaultMessage="Le Thu Cam"/>
           </div>
           <div
             className={styles.Position}
           >
-            Chairman
+            <FormattedMessage id="team.chairman" defaultMessage="Chairman"/>
           </div>
         </div>
         <div
@@ -41,12 +43,12 @@ const Team = () => {
           <div
             className={styles.Name}
           >
-            Nguyen Thu Thuy
+            <FormattedMessage id="team.director-name" defaultMessage="Nguyen Thu Thuy"/>
           </div>
           <div
             className={styles.Position}
           >
-            Director
+            <FormattedMessage id="team.director" defaultMessage="Director"/>
           </div>
         </div>
       </div>
@@ -56,16 +58,16 @@ const Team = () => {
         <div
           className={styles.TeamMember}
         >
-          <img src="/images/team/van-le-2.jpg" alt="Ms. Van"/>
+          <img src="/images/team/van-le-2.jpg" alt="Mr. Thuan"/>
           <div
             className={styles.Name}
           >
-            Le Cam Van
+            <FormattedMessage id="team.manager-name" defaultMessage="Nguyen Van Thuan"/>
           </div>
           <div
             className={styles.Position}
           >
-            Manager
+            <FormattedMessage id="team.manager" defaultMessage="Manager"/>
           </div>
         </div>
         <div
@@ -75,12 +77,12 @@ const Team = () => {
           <div
             className={styles.Name}
           >
-            Nguyen Hau
+            <FormattedMessage id="team.accountant-name" defaultMessage="Nguyen Thi Hau"/>
           </div>
           <div
             className={styles.Position}
           >
-            Accountant
+            <FormattedMessage id="team.accountant" defaultMessage="Accountant"/>
           </div>
         </div>
       </div>

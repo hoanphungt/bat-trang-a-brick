@@ -17,26 +17,32 @@ const Bricks = () => {
           className={styles.Article}
         >
           <div className={styles.Title}>
-            <FormattedMessage id="topMenu.bricks" defaultMessage="Bricks" />
+            <FormattedMessage id="bricks.title" defaultMessage="Bricks" />
           </div>
           <div
             className={styles.Text}
           >
             <span>
-              Clay facing bricks are natural, high-quality, user-friendly and easy to maintain.
-              Facing bricks are a sustainable product with a lifetime of more than 100 years.
-              Facing bricks withstand all weather conditions and require no maintenance.
-              Furthermore they are non-combustible and non-flammable.
-              Another advantage of facing bricks is their flexibility.
-              The layout of a building with facing bricks can always be changed,
-              both during the building process and throughout the building's lifetime. 
+              <FormattedMessage
+                id="bricks.text1"
+                defaultMessage="Clay facing bricks are natural, high-quality, user-friendly and easy to maintain.
+                Facing bricks are a sustainable product with a lifetime of more than 100 years.
+                Facing bricks withstand all weather conditions and require no maintenance.
+                Furthermore they are non-combustible and non-flammable.
+                Another advantage of facing bricks is their flexibility.
+                The layout of a building with facing bricks can always be changed,
+                both during the building process and throughout the building's lifetime."
+              />
             </span>
             <br/>
             <br/>
             <span>
-              Since Bat Trang Ancient Bricks offers facing bricks in many different colours and sizes,
-              there will always be a facing brick to match your requirements.
-              If you are interested in buying facing bricks and need appropriate advice, please contact us!
+              <FormattedMessage
+                id="bricks.text2"
+                defaultMessage="Since Bat Trang Ancient Bricks offers facing bricks in many different colours and sizes,
+                there will always be a facing brick to match your requirements.
+                If you are interested in buying facing bricks and need appropriate advice, please contact us!"
+              />
             </span>
           </div>
         </div>
@@ -47,7 +53,7 @@ const Bricks = () => {
             className={styles.ProductFilter}
           >
             <button>
-              All assortments
+              <FormattedMessage id="bricks.allAssortments" defaultMessage="All assortments" />
             </button>
           </div>
           <div
