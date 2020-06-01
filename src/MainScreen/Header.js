@@ -34,7 +34,7 @@ const HeaderMobile = (props) => {
       </Link>
       {!props.mobileMenu ? (
         <div
-          className={styles.MenuMobile}
+          className={styles.MobileMenu}
           onClick={() => props.setMobileMenu(true)}
         >
           ≡
