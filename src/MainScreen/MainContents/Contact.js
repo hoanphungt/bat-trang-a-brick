@@ -13,7 +13,7 @@ const Contact = () => {
       <Map
         style={{
           width: "100%",
-          height: 250,
+          height: 300,
           marginBottom: 10
         }}
         center={[21.042638, 105.844245]}
