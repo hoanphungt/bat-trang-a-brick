@@ -100,4 +100,12 @@
     width: 25%;
     padding: 5px;
   }
+
+  .ProductDetails {
+    flex-direction: column;
+  }
+
+  .ProductIntro {
+    margin-bottom: 2rem;
+  }
 }

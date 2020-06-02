@@ -82,7 +82,7 @@ const Brick = (props) => {
               <span
                 className={styles.ProductCode}
               >
-                {brick.specifications.code ? brick.specifications.code : ''}
+                <FormattedMessage id="brick.code" defaultMessage="Code"/>: {brick.specifications.code ? brick.specifications.code : ''}
               </span>
               <br/>
               <span><b><FormattedMessage id="brick.color" defaultMessage="Color" /></b></span>
