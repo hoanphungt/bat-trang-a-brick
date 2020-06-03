@@ -8,6 +8,7 @@ export const allBricks = {
   sample1: {
     id: 1,
     name: 'sample 1',
+    popular: true,
     urls: {
       // max 4 urls are allowed as explained in the top
       brickUrl: '/products/sample1/brick.jpg',
@@ -29,6 +30,7 @@ export const allBricks = {
   sample2: {
     id: 2,
     name: 'sample 2',
+    popular: true,
     urls: {
       brickUrl: '/products/sample2/brick.jpg',
     },
@@ -46,6 +48,7 @@ export const allBricks = {
   sample3: {
     id: 3,
     name: 'sample 3',
+    popular: true,
     urls: {
       brickUrl: '/products/sample3/brick.jpg',
     },
@@ -131,6 +134,7 @@ export const allBricks = {
   sample8: {
     id: 8,
     name: 'sample 8',
+    popular: true,
     urls: {
       brickUrl: '/products/sample8/brick.jpg',
     },

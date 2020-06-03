@@ -1,73 +1,50 @@
 import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
+import { allBricks } from './../data/bricks';
 import styles from './Slideshow.module.css';
 import homeStyles from './../MainScreen/MainContents/Home.module.css';
 
 import { FormattedMessage } from 'react-intl';
 
 const Slideshow = () => {
-  // Photos of popular products to show in the slideshow
-  const photos = {
-    photo1: {
-      id: 1,
-      url: '/images/bricks/1.jpg'
-    },
-    photo2: {
-      id: 2,
-      url: '/images/bricks/2.jpg'
-    },
-    photo3: {
-      id: 3,
-      url: '/images/bricks/3.jpg'
-    },
-    photo4: {
-      id: 4,
-      url: '/images/bricks/4.jpg'
-    },
-    photo5: {
-      id: 5,
-      url: '/images/bricks/5.jpg'
-    },
-  };
+  // List of all popular products
+  const popularProducts = Object.values(allBricks).filter(brick => brick.popular);
 
-  // Use react hooks to keep selected photo id in react state
-  const [photoId, setPhotoId] = useState(1);
+  // Use react hooks to keep selected product id in react state
+  const [productId, setProductId] = useState(0);
 
-  // Helper function to change photos
-  const changePhoto = (bool) => {
-    const allPhotos = Object.values(photos);
+  // Helper function to change product
+  const changeProduct = (bool) => {
     if (
-      bool && photoId <= (allPhotos.length - 1)
+      bool && productId < (popularProducts.length - 1)
     ) {
-      setPhotoId(photoId + 1);
+      setProductId(productId + 1);
     } else if (
-      !bool && photoId > 1
+      !bool && productId > 0
     ) {
-      setPhotoId(photoId - 1);
+      setProductId(productId - 1);
     } else if (bool) {
-      setPhotoId(1);
+      setProductId(0);
     } else { // bool === false
-      setPhotoId(5);
+      setProductId(popularProducts.length - 1);
     };
   };
 
-  // Helper function to select photo
-  const selectPhoto = (photos) => {
-    return Object.values(photos).find(photo => photo.id === photoId);
-  };
-
-  // useEffect and setInterval to automatically change photo in the slideshow
+  // useEffect and setInterval to automatically change products in the slideshow
   useEffect(() => {
     const interval = setInterval(() => {
-      const allPhotos = Object.values(photos);
-      if (photoId <= (allPhotos.length - 1)) {
-        setPhotoId(photoId + 1);
+      if (productId < (popularProducts.length - 1)) {
+        setProductId(productId + 1);
       } else {
-        setPhotoId(1);
+        setProductId(0);
       };
     }, 3000);
 
     return () => clearInterval(interval);
-  }, [photoId, setPhotoId, photos])
+  }, [productId, popularProducts]);
+
+  // Variable to keep the currently selected product
+  const selectedProduct= popularProducts.find((_, i) => i === productId);
 
   return (
     <div
@@ -86,13 +63,13 @@ const Slideshow = () => {
         >
           <div
             className={styles.SlideshowButton}
-            onClick={() => changePhoto(false)}
+            onClick={() => changeProduct(false)}
           >
             {'<'}
           </div>
           <div
             className={styles.SlideshowButton}
-            onClick={() => changePhoto(true)}
+            onClick={() => changeProduct(true)}
           >
             {'>'}
           </div>
@@ -104,11 +81,13 @@ const Slideshow = () => {
       <div
         className={styles.Slideshow}
       >
-        <img
-          className={styles.SlideshowPhoto}
-          src={selectPhoto(photos).url}
-          alt="brick"
-        />
+        <Link to={`/bricks/${selectedProduct.id}`}>
+          <img
+            className={styles.SlideshowPhoto}
+            src={selectedProduct.urls.brickUrl}
+            alt="brick"
+          />
+        </Link>
       </div>
     </div>
   )

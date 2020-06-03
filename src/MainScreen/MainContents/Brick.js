@@ -47,8 +47,9 @@ const Brick = (props) => {
             <div
               className={styles.SidePhotos}
             >
-              {photoUrls.map(url => (
+              {photoUrls.map((url, i) => (
                 <img
+                  key={i}
                   src={url}
                   alt={url}
                   onClick={() => setSelectedPhoto(url)}
