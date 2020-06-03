@@ -25,7 +25,7 @@ const Contact = () => {
         />
         <Marker position={[21.042638, 105.844245]}>
           <Popup>
-            <b><FormattedMessage id="map.mainOffice" defaultMessage="Main office" />:</b><br/>
+            <b><FormattedMessage id="footer.mainOffice" defaultMessage="Main office" />:</b><br/>
             <br/>
             <FormattedMessage id="footer.add1" defaultMessage="45 Yen Ninh" />, <FormattedMessage id="footer.add3" defaultMessage="Hanoi" /><br/>
             <a href="mailto:gachcobattrang@gmail.com" target="blank">gachcobattrang@gmail.com</a><br />
@@ -34,9 +34,9 @@ const Contact = () => {
         </Marker>
         <Marker position={[20.979699, 105.924128]}>
           <Popup>
-            <b><FormattedMessage id="map.productionFacility" defaultMessage="Production facility" />:</b><br/>
+            <b><FormattedMessage id="footer.productionFacility" defaultMessage="Production facility" />:</b><br/>
             <br/>
-            <FormattedMessage id="add.factory-add1" defaultMessage="Da Ton" />, <FormattedMessage id="add.factory-add2" defaultMessage="Gia Lam" />, <FormattedMessage id="footer.add3" defaultMessage="Hanoi" /><br/>
+            <FormattedMessage id="footer.factory-add1" defaultMessage="Da Ton" />, <FormattedMessage id="footer.factory-add2" defaultMessage="Gia Lam" />, <FormattedMessage id="footer.add3" defaultMessage="Hanoi" /><br/>
             <a href="mailto:gachcobattrang@gmail.com" target="blank">gachcobattrang@gmail.com</a><br />
             <a href="tel:+84916082546">+84 (0) 916082546</a>
           </Popup>
@@ -54,20 +54,22 @@ const Contact = () => {
           <div
             className={brickStyles.Text}
           >
-            <span><FormattedMessage id="footer.companyName" defaultMessage="Bat Trang Ancient Bricks Ltd." /></span>
+            <p><FormattedMessage id="footer.companyName" defaultMessage="Bat Trang Ancient Bricks Ltd." /></p>
             <br/>
-            <span><FormattedMessage id="footer.add1" defaultMessage="45 Yen Ninh" /></span>
+            <p><b><FormattedMessage id="footer.mainOffice" defaultMessage="Main office" />:</b></p>
+            <p><FormattedMessage id="footer.add1" defaultMessage="45 Yen Ninh" /></p>
+            <p><FormattedMessage id="footer.add2" defaultMessage="Ba Dinh district" /></p>
+            <p><FormattedMessage id="footer.add3" defaultMessage="Hanoi" /></p>
+            <p><FormattedMessage id="footer.add4" defaultMessage="Vietnam" /></p>
             <br/>
-            <span><FormattedMessage id="footer.add2" defaultMessage="Ba Dinh district" /></span>
+            <p><b><FormattedMessage id="footer.productionFacility" defaultMessage="Production facility" />:</b></p>
+            <p><FormattedMessage id="footer.factory-add1" defaultMessage="Da Ton" /></p>
+            <p><FormattedMessage id="footer.factory-add2" defaultMessage="Gia Lam district" /></p>
+            <p><FormattedMessage id="footer.add3" defaultMessage="Hanoi" /></p>
+            <p><FormattedMessage id="footer.add4" defaultMessage="Vietnam" /></p>
             <br/>
-            <span><FormattedMessage id="footer.add3" defaultMessage="Hanoi" /></span>
-            <br/>
-            <span><FormattedMessage id="footer.add4" defaultMessage="Vietnam" /></span> 
-            <br/>
-            <br/>
-            <span>Tel: +84 (0)916082546</span>
-            <br/>
-            <span>Email: gachcobattrang@gmail.com</span>
+            <p><b>Tel:</b> +84 (0)916082546</p>
+            <p><b>Email:</b> gachcobattrang@gmail.com</p>
           </div>
         </div>
       </div>
