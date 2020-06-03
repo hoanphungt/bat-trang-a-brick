@@ -5,7 +5,7 @@
   top: 0;
   left: 0;
   background-color: rgba(105, 99, 99, 0.8);
-  z-index: 5000;
+  z-index: 2000;
   opacity: 0;
   visibility: hidden;
   transition: all .3s;
