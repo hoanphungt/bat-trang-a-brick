@@ -82,6 +82,14 @@
   font-weight: bold;
 }
 
+.BackToBricks {
+  cursor: pointer;
+}
+
+.BackToBricks:hover {
+  color: #f42434;
+}
+
 @media only screen and (max-width: 600px) {
   .ProductPhotos {
     flex-direction: column;

@@ -23,13 +23,6 @@ const Brick = (props) => {
         <div
           className={`${homeStyles.MainContent} ${styles.BrickContent}`}
         >
-          {/* Do we need this title?
-          <div
-            className={styles.ProductTitle}
-            style={{ paddingLeft: '1rem' }}
-          >
-            Gallery
-          </div> */}
           <div
             className={homeStyles.Separator}
           />
@@ -66,7 +59,12 @@ const Brick = (props) => {
               <span
                 className={styles.ProductTitle}
               >
-                {brick.name}
+                <span
+                  className={styles.BackToBricks}
+                  onClick={() => props.history.push('/bricks')}
+                >
+                  <FormattedMessage id="bricks.shortTitle" defaultMessage="Bricks" />
+                </span> / {brick.name}
               </span>
               <br/>
               <span>{brick.brickIntro ? brick.brickIntro : ''}</span>
