@@ -72,23 +72,36 @@ const Brick = (props) => {
             <div
               className={styles.ProductSpecs}
             >
-              <span
+              <p
                 className={styles.ProductTitle}
               >
                 <FormattedMessage id="brick.specs" defaultMessage="Specs" />
-              </span>
+              </p>
               <br/>
-              <span
-                className={styles.ProductCode}
-              >
-                <FormattedMessage id="brick.code" defaultMessage="Code"/>: {brick.specifications.code ? brick.specifications.code : ''}
-              </span>
-              <br/>
-              <span><b><FormattedMessage id="brick.color" defaultMessage="Color" /></b></span>
-              <span>{brick.specifications.color ? brick.specifications.color : ''}</span>
-              <br/>
-              <span><b><FormattedMessage id="brick.format" defaultMessage="Brick format" /></b></span>
-              <span>{brick.specifications.format ? brick.specifications.format : ''}</span>
+              {brick.specifications.code ? (
+                <div
+                  className={styles.ProductCode}
+                >
+                  <p><b><FormattedMessage id="brick.code" defaultMessage="Code"/></b></p>
+                  <p>{brick.specifications.code}</p>
+                  <br/>
+                </div>
+              ) : null}
+
+              {brick.specifications.color ? (
+                <div>
+                  <p><b><FormattedMessage id="brick.color" defaultMessage="Color" /></b></p>
+                  <p>{brick.specifications.color}</p>
+                  <br/>
+                </div>
+              ) : null}
+
+              {brick.specifications.format ? (
+                <div>
+                  <p><b><FormattedMessage id="brick.format" defaultMessage="Brick format" /></b></p>
+                  <p>{brick.specifications.format}</p>
+                </div>
+              ) : null}
             </div>
           </div>
         </div>

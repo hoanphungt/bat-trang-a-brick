@@ -67,9 +67,6 @@
 .ProductSpecs {
   flex: 1;
   padding: 0 1rem;
-
-  display: flex;
-  flex-direction: column;
 }
 
 .ProductTitle {
@@ -77,9 +74,8 @@
   text-transform: capitalize;
 }
 
-.ProductCode {
+.ProductCode p {
   font-size: 1.8rem;
-  font-weight: bold;
 }
 
 .BackToBricks {
