@@ -3,8 +3,6 @@ import styles from './FacebookPosts.module.css';
 import slideshowStyles from './Slideshow.module.css';
 import homeStyles from './../MainScreen/MainContents/Home.module.css';
 
-import { FormattedMessage } from 'react-intl';
-
 const FacebookPosts = () => {
   return (
     <div
@@ -13,7 +11,7 @@ const FacebookPosts = () => {
       <div
         className={slideshowStyles.SlideshowTitle}
       >
-        <FormattedMessage id="facebook.facebook" defaultMessage="Facebook"/>
+        Facebook
       </div>
       <div
         className={homeStyles.Separator}
