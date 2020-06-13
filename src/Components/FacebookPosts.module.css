@@ -1,0 +1,8 @@
+.FacebookPosts {
+  max-height: 60rem;
+  overflow: scroll;
+}
+
+.FacebookPosts div {
+  margin-bottom: 1rem;
+}

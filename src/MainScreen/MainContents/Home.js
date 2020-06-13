@@ -2,7 +2,7 @@ import React from 'react';
 import HomePhoto from '../../Components/HomePhoto';
 import MainContainer from '../MainContainer';
 import Slideshow from '../../Components/Slideshow';
-import Team from '../../Components/Team';
+import FacebookPosts from '../../Components/FacebookPosts';
 import styles from './Home.module.css';
 
 import { FormattedMessage } from 'react-intl';
@@ -38,7 +38,7 @@ const Home = () => {
           className={styles.MainBlock}
         >
           <Slideshow />
-          <Team />
+          <FacebookPosts />
         </div>
       </div>
     </MainContainer>
