@@ -93,7 +93,7 @@ export const allBricks = {
   sample5: {
     id: 5,
     name: 'gạch bát giác',
-    popular: true,
+    popular: false,
     urls: {
       brickUrl: '/products/sample5/brick.jpg',
       buildingUrl1: '/products/sample5/building-1.jpg',
@@ -112,7 +112,7 @@ export const allBricks = {
   sample6: {
     id: 6,
     name: 'gạch lục lăng',
-    popular: true,
+    popular: false,
     urls: {
       brickUrl: '/products/sample6/brick.jpg',
       buildingUrl1: '/products/sample6/building-1.jpg',
@@ -131,7 +131,7 @@ export const allBricks = {
   sample7: {
     id: 7,
     name: 'gạch chữ thọ',
-    popular: true,
+    popular: false,
     urls: {
       brickUrl: '/products/sample7/brick.jpg',
       buildingUrl1: '/products/sample7/building-1.jpg',
@@ -151,7 +151,7 @@ export const allBricks = {
   sample8: {
     id: 8,
     name: 'gạch lát nền',
-    popular: true,
+    popular: false,
     urls: {
       brickUrl: '/products/sample8/brick.jpg',
       buildingUrl1: '/products/sample8/building-1.jpg',
@@ -191,7 +191,7 @@ export const allBricks = {
   sample10: {
     id: 10,
     name: 'gạch thất cổ',
-    popular: true,
+    popular: false,
     urls: {
       brickUrl: '/products/sample10/brick.jpg',
       buildingUrl1: '/products/sample10/building-1.jpg',
@@ -212,7 +212,7 @@ export const allBricks = {
   sample11: {
     id: 11,
     name: 'gạch hoa chanh',
-    popular: true,
+    popular: false,
     urls: {
       brickUrl: '/products/sample11/brick.jpg',
       buildingUrl1: '/products/sample11/building-1.jpg',
@@ -231,7 +231,7 @@ export const allBricks = {
   sample12: {
     id: 12,
     name: 'gạch mẫu',
-    popular: true,
+    popular: false,
     urls: {
       brickUrl: '/products/sample12/brick.jpg',
       buildingUrl1: '/products/sample12/building-1.jpg',
