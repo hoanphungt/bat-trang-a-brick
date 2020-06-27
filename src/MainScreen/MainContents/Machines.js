@@ -15,7 +15,17 @@ const Machines = () => {
           className={brickStyles.Article}
         >
           <div className={brickStyles.Title}>        
-            <FormattedMessage id="topMenu.machines" defaultMessage="Machines" />
+            <FormattedMessage id="topMenu.machines" defaultMessage="CNC Machines" />
+          </div>
+          <div
+            className={brickStyles.Text}
+          >
+            <span>
+              <FormattedMessage
+                id="machines.text1"
+                defaultMessage="Coming soon"
+              />
+            </span>
           </div>
         </div>
       </div>
