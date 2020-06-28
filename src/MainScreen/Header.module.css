@@ -15,7 +15,7 @@
 }
 
 .HeaderMobile {
-  height: 10rem;
+  height: 9rem;
   width: 100%;
 
   display: flex;
@@ -37,10 +37,4 @@
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-@media only screen and (max-width: 600px) {
-  .HeaderMobile {
-    height: 9rem;
-  }
 }
