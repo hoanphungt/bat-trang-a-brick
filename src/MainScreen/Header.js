@@ -25,11 +25,10 @@ const HeaderMobile = (props) => {
     <div
       className={`${styles.Header} ${styles.HeaderMobile}`}
     >
-      <Link to='/'>
+      <Link to='/' className={logoStyles.LogoMobile}>
         <img
-          className={logoStyles.LogoMobile}
-          src="/images/header-logo-large.png"
-          alt="log"
+          src="/images/logo.jpg"
+          alt="logo"
         />
       </Link>
       {!props.mobileMenu ? (

@@ -16,17 +16,35 @@
 
 .LogoLineRight {
   flex: 1;
-  margin-top: 10rem;
+  margin-top: 9rem;
   border-top: 2px solid #f0273a;
 }
 
 .Logo {
-  width: 28rem;
-  margin: 4.5rem 3px 0 3px;
+  height: 12rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Logo img {
+  width: 11rem;
 }
 
 .LogoMobile {
-  max-width: 20rem;
-  margin-top: 2rem;
-  margin-left: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.LogoMobile img {
+  max-width: 9rem;
+  margin-left: 4rem;
+}
+
+@media only screen and (max-width: 600px) {
+  .LogoMobile img {
+    max-width: 8rem;
+    margin-left: 2rem;
+  }
 }

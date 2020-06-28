@@ -8,10 +8,9 @@ const LogoHolder = () => {
       className={styles.LogoHolder}
     >
       <div className={styles.LogoLineLeft}/>
-      <Link to='/'>
+      <Link to='/' className={styles.Logo}>
         <img
-          className={styles.Logo}
-          src="/images/header-logo-large.png"
+          src="/images/logo.jpg"
           alt="logo"
         />
       </Link>
