@@ -11,7 +11,7 @@ const Slideshow = () => {
   const popularProducts = Object.values(allBricks).filter(brick => brick.popular);
 
   // Use react hooks to keep selected product id in react state
-  const [productId, setProductId] = useState(3);
+  const [productId, setProductId] = useState(0);
 
   // Helper function to change product
   const changeProduct = (bool) => {

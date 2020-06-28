@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import MainContainer from '../MainContainer';
 import styles from './Bricks.module.css';
@@ -8,6 +8,17 @@ import { allBricks } from './../../data/bricks';
 import { FormattedMessage } from 'react-intl';
 
 const Bricks = () => {
+  // import all bricks from the brick data file
+  const bricks = Object.values(allBricks);
+
+  // useState to keep track of selected brick type
+  const [brickType, setBrickType] = useState(null);
+
+  // filter sorted bricks based on selected brick type
+  const sortedBricks = brickType ? bricks.filter(
+    brick => brick.type && brick.type.includes(brickType)
+  ) : bricks;
+
   return (
     <MainContainer>
       <div
@@ -58,8 +69,30 @@ const Bricks = () => {
           <div
             className={styles.ProductFilter}
           >
-            <button>
+            <button
+              onClick={() => setBrickType(null)}
+            >
               <FormattedMessage id="bricks.allAssortments" defaultMessage="All assortments" />
+            </button>
+            <button
+              onClick={() => setBrickType(1)}
+            >
+              <FormattedMessage id="bricks.bricksType" defaultMessage="Bricks" />
+            </button>
+            <button
+              onClick={() => setBrickType(2)}
+            >
+              <FormattedMessage id="bricks.wallTilesType" defaultMessage="Wall Tiles" />
+            </button>
+            <button
+              onClick={() => setBrickType(3)}
+            >
+              <FormattedMessage id="bricks.floorTilesType" defaultMessage="Floor Tiles" />
+            </button>
+            <button
+              onClick={() => setBrickType(4)}
+            >
+              <FormattedMessage id="bricks.decorType" defaultMessage="Decor" />
             </button>
           </div>
           <div
@@ -69,7 +102,7 @@ const Bricks = () => {
           <div
             className={styles.ProductList}
           >
-            {Object.values(allBricks).map(brick => (
+            {sortedBricks.map(brick => (
               <Link
                 to={`/bricks/${brick.id}`}
                 className={styles.ProductWrapper}
