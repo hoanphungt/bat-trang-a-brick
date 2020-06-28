@@ -1,11 +1,10 @@
 import React, { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
 import LogoHolder from '../Components/LogoHolder';
+import LogoHolderMobile from '../Components/LogoHolderMobile';
 import TopMenu from '../Components/TopMenu';
 import Language from '../Components/Language';
 import LogoYear from '../Components/LogoYear';
 import styles from './Header.module.css';
-import logoStyles from './../Components/LogoHolder.module.css';
 
 const HeaderDesktop = () => {
   return (
@@ -25,20 +24,13 @@ const HeaderMobile = (props) => {
     <div
       className={`${styles.Header} ${styles.HeaderMobile}`}
     >
-      <Link to='/' className={logoStyles.LogoMobile}>
-        <img
-          src="/images/logo.jpg"
-          alt="logo"
-        />
-      </Link>
-      {!props.mobileMenu ? (
-        <div
-          className={styles.MobileMenu}
-          onClick={() => props.setMobileMenu(true)}
-        >
-          ≡
-        </div>
-      ) : null}
+      <LogoHolderMobile />
+      <div
+        className={styles.MobileMenu}
+        onClick={() => props.setMobileMenu(true)}
+      >
+        ≡
+      </div>
     </div>
   );
 };
