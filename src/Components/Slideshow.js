@@ -56,7 +56,9 @@ const Slideshow = () => {
         <div
           className={styles.SlideshowTitle}
         >
-          <FormattedMessage id="home.popularProducts" defaultMessage="Popular products"/>
+          <Link to={`/bricks`}>
+            <FormattedMessage id="home.popularProducts" defaultMessage="Popular products"/>
+          </Link>
         </div>
         <div
           className={styles.SlideshowButtons}
