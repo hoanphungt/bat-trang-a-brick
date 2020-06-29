@@ -26,6 +26,11 @@
   align-items: center;
 }
 
+.MainPhoto img {
+  width: 90%;
+  padding: 5px;
+}
+
 .MainPhoto i {
   position: absolute;
   font-size: 4rem;
@@ -47,11 +52,6 @@
 
 .MainPhoto > .RightIcon {
   right: 8%;
-}
-
-.MainPhoto img {
-  width: 90%;
-  padding: 5px;
 }
 
 .SidePhotos {
