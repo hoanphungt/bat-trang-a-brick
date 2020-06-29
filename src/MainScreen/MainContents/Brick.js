@@ -12,8 +12,25 @@ const Brick = (props) => {
   );
 
   const photoUrls = Object.values(brick.urls);
+  const numberOfPhotos = photoUrls.length;
 
-  const [selectedPhoto, setSelectedPhoto] = useState(brick.urls.brickUrl);
+  const [id, setId] = useState(0);
+
+  const toPrevious = () => {
+    if (id > 0) {
+      setId(id - 1);
+    } else {
+      setId(numberOfPhotos - 1);
+    };
+  };
+
+  const toNext = () => {
+    if (id < (numberOfPhotos - 1)) {
+      setId(id + 1);
+    } else {
+      setId(0);
+    };
+  };
 
   return (
     <MainContainer>
@@ -32,21 +49,39 @@ const Brick = (props) => {
             <div
               className={styles.MainPhoto}
             >
+              <i
+                className={`fa fa-angle-double-left ${styles.LeftIcon}`}
+                onClick={toPrevious}
+              />
               <img
-                src={selectedPhoto}
+                src={photoUrls[id]}
                 alt="brick"
+              />
+              <i
+                className={`fa fa-angle-double-right ${styles.RightIcon}`}
+                onClick={toNext}
               />
             </div>
             <div
               className={styles.SidePhotos}
             >
               {photoUrls.map((url, i) => (
-                <img
-                  key={i}
-                  src={url}
-                  alt={url}
-                  onClick={() => setSelectedPhoto(url)}
-                />
+                <div
+                  className={styles.SidePhoto}
+                >
+                  {id === i ? (
+                    <div
+                      className={styles.UpperLayer}
+                    />
+                  ) : null}
+                  <img
+                    className={id === i ? styles.SelectedPhoto : ""}
+                    key={i}
+                    src={url}
+                    alt={url}
+                    onClick={() => setId(i)}
+                  />
+                </div>
               ))}
             </div>
           </div>
