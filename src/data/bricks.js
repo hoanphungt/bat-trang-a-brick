@@ -21,6 +21,7 @@ export const allBricks = {
       buildingUrl1: '/products/sample4/building-1.jpg',
       buildingUrl2: '/products/sample4/building-2.jpg',
       buildingUrl3: '/products/sample4/building-3.jpg',
+      buildingUrl4: '/products/sample4/building-1.jpg',
     },
     brickIntro: `
       The raw materials are excavated in Weichsel loam layers, the local loam of Aeolian origin dating from the Ice Age.

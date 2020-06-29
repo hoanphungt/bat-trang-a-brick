@@ -141,9 +141,9 @@
     align-items: center;
   }
 
-  .SidePhotos > img {
-    width: 25%;
-    padding: 5px;
+  .SidePhoto {
+    /* width: 25%; */
+    margin: 5px;
   }
 
   .ProductDetails {
