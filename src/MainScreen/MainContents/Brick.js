@@ -16,6 +16,11 @@ const Brick = (props) => {
 
   const [id, setId] = useState(0);
 
+  // Store height of the "MainPhoto" div
+  // and set it for the "SidePhotos" div
+  // to keep them in sync
+  const [height, setHeight] = useState(0);
+
   const toPrevious = () => {
     if (id > 0) {
       setId(id - 1);
@@ -48,6 +53,8 @@ const Brick = (props) => {
           >
             <div
               className={styles.MainPhoto}
+              // Store height of the MainPhoto div
+              onLoad={e => setHeight(e.currentTarget.clientHeight)}
             >
               <i
                 className={`fa fa-angle-double-left ${styles.LeftIcon}`}
@@ -64,6 +71,9 @@ const Brick = (props) => {
             </div>
             <div
               className={styles.SidePhotos}
+              // Set height of the "SidePhotos" div
+              // as the height stored in state
+              style={{ height }}
             >
               {photoUrls.map((url, i) => (
                 <div
