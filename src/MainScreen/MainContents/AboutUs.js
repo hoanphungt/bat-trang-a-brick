@@ -24,7 +24,7 @@ const AboutUs = () => {
             <br/>
             <p>Gạch Bát Tràng được sử dụng để xây Hoàng thành Thăng Long và hầu hết cung điện, đình, chùa trên dọc dài dải đất Việt, làm sang trọng hơn những khuôn viện, sân vườn, các gia đình quyền quý.</p>
             <br/>
-            <p>Được rèn luyện đi lên từ những kinh nghiệm tích lũy hơn 700 năm của cha ông, Công ty TNHH Gạch cổ Bát Tràng đã kế thừa, phát triển và đưa vào từng sản phẩm tinh hoa của dân tộc qua bàn tay tài hoa của những người khôi phục.</p>
+            <p>Được rèn luyện đi lên từ những kinh nghiệm tích lũy hơn 500 năm của cha ông, Công ty TNHH Gạch cổ Bát Tràng đã kế thừa, phát triển và đưa vào từng sản phẩm tinh hoa của dân tộc qua bàn tay tài hoa của những người khôi phục.</p>
             <br/>
             <p>Với sự kết hợp tài tình giữa phong cách cổ được thừa hưởng từ hàng trăm năm nay và phong cách hiện đại được kết tinh từ bề dày lịch sử kiến trúc phương Tây, Công ty chúng tôi tự hào là đơn vị đi đầu sản xuất các sản phẩm trang trí nội - ngoại thất chất liệu gạch đất nung, gạch gốm cao cấp tại Việt Nam. Sản phẩm của Công ty Gạch cổ Bát Tràng mang phong cách đơn giản, mộc mạc, sử dụng chất liệu tự nhiên không hóa chất, thân thiện với môi trường, mát vào mùa hè - ấm vào mùa đông, không rêu mốc và bền mãi với thời gian.</p>
             <br/>
@@ -44,7 +44,7 @@ const AboutUs = () => {
             <br/>
             <p>- Các lâu đài cổ ở Ý,công trình các nhà tù thế giới thu nhỏ ở Canada, Mỹ, v.v...</p>
             <br/>
-            <p>- Và rất nhiều nhà đẹp, biệt thự, những công trình lớn khác trên khắp mọi miền đất nước.</p>
+            <p>- Và rất nhiều nhà đẹp, biệt thự, căn hộ cao cấp cho người nước ngoài thuê ở khu vực Hồ Tây, những công trình lớn khác trên mọi miền đất nước.</p>
             <br/>
             <p>Hiện nay, Công ty TNHH Gạch cổ Bát Tràng cũng đã và đang cung cấp máy ngói, máy gạch, máy đùn, máy nghiền các loại, khuôn mẫu và vật liệu chịu lửa cho các nhà máy tuynel, các nhà máy thuộc hệ thống của Viglacera trên khắp cả nước từ Hà Giang, Phú Thọ, Lạng Sơn qua Thanh Hóa, Nghệ An, Hà Tĩnh, Quảng Bình đến Đà Nẵng, Phú Yên, Khánh Hòa, Bình Dương, Bình Định v.v..., đều sử dụng sản phẩm do Công ty Gạch cổ Bát Tràng chế tạo và sản xuất.</p>
             <br/>
