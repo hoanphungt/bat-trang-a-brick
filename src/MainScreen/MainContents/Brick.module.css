@@ -139,6 +139,7 @@ img.SelectedPhoto:hover {
 
   .SidePhotos {
     width: 90%;
+    height: auto !important;
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
