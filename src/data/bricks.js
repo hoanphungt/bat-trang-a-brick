@@ -1,10 +1,4 @@
-// Note: max 4 urls are allowed in urls
-// this is because of a limitation of the current
-// gallery of photos for selected product
-// as only a maximum of 4 photos can be shown
-// at one time
-
-// codes of brick types should be updated here:
+// Codes of brick types should be updated here:
 // 1: bricks
 // 2: wall tiles
 // 3: floor tiles
@@ -21,6 +15,8 @@ export const allBricks = {
       buildingUrl1: '/products/sample4/building-1.jpg',
       buildingUrl2: '/products/sample4/building-2.jpg',
       buildingUrl3: '/products/sample4/building-3.jpg',
+      buildingUrl4: '/products/sample4/building-4.jpg',
+      buildingUrl5: '/products/sample4/building-5.jpg',
     },
     brickIntro: `
       The raw materials are excavated in Weichsel loam layers, the local loam of Aeolian origin dating from the Ice Age.
@@ -65,6 +61,9 @@ export const allBricks = {
       buildingUrl1: '/products/sample2/building-1.jpg',
       buildingUrl2: '/products/sample2/building-2.jpg',
       buildingUrl3: '/products/sample2/building-3.jpg',
+      buildingUrl4: '/products/sample2/building-4.jpg',
+      buildingUrl5: '/products/sample2/building-5.jpg',
+      buildingUrl6: '/products/sample2/building-6.jpg',
     },
     brickIntro: `
       The raw materials are excavated in Weichsel loam layers, the local loam of Aeolian origin dating from the Ice Age.
@@ -149,11 +148,23 @@ export const allBricks = {
     name: 'gạch hoa văn',
     popular: true,
     urls: {
-      // max 4 urls are allowed as explained in the top
       brickUrl: '/products/sample1/brick.jpg',
-      buildingUrl1: '/products/sample1/building-1.jpg',
-      buildingUrl2: '/products/sample1/building-2.jpg',
-      buildingUrl3: '/products/sample1/building-3.jpg',
+      buildingUrl1: '/products/sample1/ghv-1.jpg',
+      buildingUrl2: '/products/sample1/ghv-2.jpg',
+      buildingUrl3: '/products/sample1/ghv-3.jpg',
+      buildingUrl4: '/products/sample1/ghv-4.jpg',
+      buildingUrl5: '/products/sample1/ghv-5.jpg',
+      buildingUrl6: '/products/sample1/ghv-6.jpg',
+      buildingUrl7: '/products/sample1/ghv-7.jpg',
+      buildingUrl8: '/products/sample1/ghv-8.jpg',
+      buildingUrl9: '/products/sample1/ghv-9.jpg',
+      buildingUrl10: '/products/sample1/ghv-10.jpg',
+      buildingUrl11: '/products/sample1/ghv-11.jpg',
+      buildingUrl12: '/products/sample1/ghv-12.jpg',
+      buildingUrl13: '/products/sample1/ghv-13.jpg',
+      buildingUrl14: '/products/sample1/ghv-14.jpg',
+      buildingUrl15: '/products/sample1/ghv-15.jpg',
+      buildingUrl16: '/products/sample1/ghv-16.jpg',
     },
     brickIntro: `
       The raw materials are excavated in Weichsel loam layers, the local loam of Aeolian origin dating from the Ice Age.
@@ -167,6 +178,31 @@ export const allBricks = {
     },
     type: [4]
   },
+  sample13: {
+    id: 13,
+    name: 'gạch Bát Tràng cổ',
+    popular: true,
+    urls: {
+      // max 4 urls are allowed as explained in the top
+      brickUrl: '/products/sample13/brick.jpg',
+      buildingUrl1: '/products/sample13/building-1.jpg',
+      buildingUrl2: '/products/sample13/building-2.jpg',
+      buildingUrl3: '/products/sample13/building-3.jpg',
+      buildingUrl4: '/products/sample13/building-4.jpg',
+      buildingUrl5: '/products/sample13/building-5.jpg',
+    },
+    brickIntro: `
+      The raw materials are excavated in Weichsel loam layers, the local loam of Aeolian origin dating from the Ice Age.
+      This Loess mainly consists of a silt-like fraction, suited ideally for the manufacturing of hand form bricks.
+      By using specific sand types for surface covering, the desired colour is achieved.
+    `,
+    specifications: {
+      code: 'BB 8328',
+      color: 'Orange brown with dark shades.',
+      format: 'WF ± 210 x 100 x 50 mm'
+    },
+    type: [3]
+  },
   sample8: {
     id: 8,
     name: 'gạch lát nền',
@@ -174,6 +210,8 @@ export const allBricks = {
     urls: {
       brickUrl: '/products/sample8/brick.jpg',
       buildingUrl1: '/products/sample8/building-1.jpg',
+      buildingUrl2: '/products/sample8/building-2.jpg',
+      buildingUrl3: '/products/sample8/building-3.jpg',
     },
     brickIntro: `
       The raw materials are excavated in Weichsel loam layers, the local loam of Aeolian origin dating from the Ice Age.
