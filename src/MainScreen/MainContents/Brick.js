@@ -68,6 +68,7 @@ const Brick = (props) => {
               {photoUrls.map((url, i) => (
                 <div
                   className={styles.SidePhoto}
+                  key={i}
                 >
                   {id === i ? (
                     <div
