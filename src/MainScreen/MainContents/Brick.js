@@ -76,23 +76,13 @@ const Brick = (props) => {
               style={{ height }}
             >
               {photoUrls.map((url, i) => (
-                <div
-                  className={styles.SidePhoto}
+                <img
+                  className={id === i ? styles.SelectedPhoto : ""}
                   key={i}
-                >
-                  {id === i ? (
-                    <div
-                      className={styles.UpperLayer}
-                    />
-                  ) : null}
-                  <img
-                    className={id === i ? styles.SelectedPhoto : ""}
-                    key={i}
-                    src={url}
-                    alt={url}
-                    onClick={() => setId(i)}
-                  />
-                </div>
+                  src={url}
+                  alt={url}
+                  onClick={() => setId(i)}
+                />
               ))}
             </div>
           </div>
