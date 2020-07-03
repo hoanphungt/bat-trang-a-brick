@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import HomePhoto from '../../Components/HomePhoto';
 import MainContainer from '../MainContainer';
 import Slideshow from '../../Components/Slideshow';
@@ -8,6 +8,10 @@ import styles from './Home.module.css';
 import { FormattedMessage } from 'react-intl';
 
 const Home = () => {
+  // Store width of popular product's image
+  // to set it width for facebook container
+  const [width, setWidth] = useState(0);
+
   return (    
     <MainContainer>
       <HomePhoto />
@@ -44,8 +48,8 @@ const Home = () => {
         <div
           className={styles.MainBlock}
         >
-          <Slideshow />
-          <FacebookPosts />
+          <Slideshow setWidth={setWidth} />
+          <FacebookPosts width={width} />
         </div>
       </div>
     </MainContainer>

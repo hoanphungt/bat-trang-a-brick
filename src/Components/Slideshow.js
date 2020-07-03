@@ -6,7 +6,7 @@ import homeStyles from './../MainScreen/MainContents/Home.module.css';
 
 import { FormattedMessage } from 'react-intl';
 
-const Slideshow = () => {
+const Slideshow = ({ setWidth }) => {
   // List of all popular products
   const popularProducts = Object.values(allBricks).filter(brick => brick.popular);
 
@@ -88,6 +88,7 @@ const Slideshow = () => {
             className={styles.SlideshowPhoto}
             src={selectedProduct.urls.brickUrl}
             alt="brick"
+            onLoad={e => setWidth(e.currentTarget.clientWidth)}
           />
         </Link>
       </div>

@@ -3,8 +3,7 @@ import styles from './FacebookPosts.module.css';
 import slideshowStyles from './Slideshow.module.css';
 import homeStyles from './../MainScreen/MainContents/Home.module.css';
 
-const FacebookPosts = () => {
-
+const FacebookPosts = ({ width }) => {
   useEffect(() => {
     if (window.FB) {
       // Re-parse facebook component after each render
@@ -30,12 +29,12 @@ const FacebookPosts = () => {
         <div
           className="fb-page"
           data-href="https://www.facebook.com/CongtyTNHHGachCoBatTrang/"
-          data-width="500px" // Use max width  allowed for facebook page plugin
-          data-tabs="timeline"
-          data-small-header="true"
-          data-adapt-container-width="true" // Adapt to the container width if width < 500px
-          data-hide-cover="false"
-          data-show-facepile="false"
+          data-width={width} // width get from width of popular product's image
+          data-tabs={"timeline"}
+          data-small-header={true}
+          data-adapt-container-width={true}
+          data-hide-cover={false}
+          data-show-facepile={false}
         >
           <blockquote
             cite="https://www.facebook.com/CongtyTNHHGachCoBatTrang/"
