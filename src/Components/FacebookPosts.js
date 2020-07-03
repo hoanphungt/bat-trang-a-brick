@@ -28,15 +28,24 @@ const FacebookPosts = () => {
         className={styles.FacebookPosts}
       >
         <div
-          className="fb-post"
-          data-href="https://www.facebook.com/CongtyTNHHGachCoBatTrang/posts/597497043760479"
-          data-show-text="true"
-        />
-        <div
-          className="fb-post"
-          data-href="https://www.facebook.com/CongtyTNHHGachCoBatTrang/posts/597496843760499"
-          data-show-text="true"
-        />
+          className="fb-page"
+          data-href="https://www.facebook.com/CongtyTNHHGachCoBatTrang/"
+          // data-width="auto"
+          data-tabs="timeline"
+          data-small-header="true"
+          data-adapt-container-width="true"
+          data-hide-cover="false"
+          data-show-facepile="false"
+        >
+          <blockquote
+            cite="https://www.facebook.com/CongtyTNHHGachCoBatTrang/"
+            className="fb-xfbml-parse-ignore"
+          >
+            <a href="https://www.facebook.com/CongtyTNHHGachCoBatTrang/">
+              Công ty TNHH Gạch cổ Bát Tràng
+            </a>
+          </blockquote>
+        </div>
       </div>
     </div>
   )
