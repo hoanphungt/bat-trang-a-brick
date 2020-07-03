@@ -182,7 +182,7 @@ export const allBricks = {
   gachBatTrangCo: {
     id: 13,
     name: 'gạch Bát Tràng cổ',
-    popular: true,
+    popular: false,
     urls: {
       brickUrl: '/products/gach-bat-trang-co/brick.jpg',
       buildingUrl1: '/products/gach-bat-trang-co/building-1.jpg',
