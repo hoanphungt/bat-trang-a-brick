@@ -30,10 +30,10 @@ const FacebookPosts = () => {
         <div
           className="fb-page"
           data-href="https://www.facebook.com/CongtyTNHHGachCoBatTrang/"
-          data-width="500px"
+          data-width="500px" // Use max width  allowed for facebook page plugin
           data-tabs="timeline"
           data-small-header="true"
-          data-adapt-container-width="true"
+          data-adapt-container-width="true" // Adapt to the container width if width < 500px
           data-hide-cover="false"
           data-show-facepile="false"
         >
