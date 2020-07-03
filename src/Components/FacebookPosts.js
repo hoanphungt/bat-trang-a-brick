@@ -1,9 +1,17 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import styles from './FacebookPosts.module.css';
 import slideshowStyles from './Slideshow.module.css';
 import homeStyles from './../MainScreen/MainContents/Home.module.css';
 
 const FacebookPosts = () => {
+
+  useEffect(() => {
+    if (window.FB) {
+      // Re-parse facebook component after each render
+      window.FB.XFBML.parse();
+    };
+  });
+
   return (
     <div
       className={slideshowStyles.SlideshowContainer}
