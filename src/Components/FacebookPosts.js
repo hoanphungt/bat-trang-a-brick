@@ -30,7 +30,7 @@ const FacebookPosts = () => {
         <div
           className="fb-page"
           data-href="https://www.facebook.com/CongtyTNHHGachCoBatTrang/"
-          // data-width="auto"
+          data-width="500px"
           data-tabs="timeline"
           data-small-header="true"
           data-adapt-container-width="true"
