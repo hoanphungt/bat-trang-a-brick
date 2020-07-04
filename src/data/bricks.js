@@ -19,14 +19,14 @@ export const allBricks = {
       buildingUrl5: '/products/gach-san-my/building-5.jpg',
     },
     brickIntro: `
-      The raw materials are excavated in Weichsel loam layers, the local loam of Aeolian origin dating from the Ice Age.
-      This Loess mainly consists of a silt-like fraction, suited ideally for the manufacturing of hand form bricks.
-      By using specific sand types for surface covering, the desired colour is achieved.
+      Gạch đất nung được làm bằng tay, 100% được làm từ đất sét tự nhiên,
+      không pha than, cát và các loại hóa chất tạo màu, đốt lò thủ công ở nhiệt
+      độ trên 1200 độ C. Sản phẩm có thể sử dụng được cả trong nhà và ngoài trời.
     `,
     specifications: {
-      code: 'BB 8328',
+      code: 'GSM 67',
       color: 'Orange brown with dark shades.',
-      format: 'WF ± 210 x 100 x 50 mm'
+      format1: 'WF ± 200 x 55 x 15 mm'
     },
     type: [1, 2, 4]
   },
@@ -41,14 +41,14 @@ export const allBricks = {
       buildingUrl3: '/products/gach-vo/building-3.jpg',
     },
     brickIntro: `
-      The raw materials are excavated in Weichsel loam layers, the local loam of Aeolian origin dating from the Ice Age.
-      This Loess mainly consists of a silt-like fraction, suited ideally for the manufacturing of hand form bricks.
-      By using specific sand types for surface covering, the desired colour is achieved.
+      Gạch đất nung được làm bằng tay, 100% được làm từ đất sét tự nhiên,
+      không pha than, cát và các loại hóa chất tạo màu, đốt lò thủ công ở nhiệt
+      độ trên 1200 độ C. Sản phẩm có thể sử dụng được cả trong nhà và ngoài trời.
     `,
     specifications: {
-      code: 'BB 8328',
+      code: 'GVBT 59',
       color: 'Orange brown with dark shades.',
-      format: 'WF ± 210 x 100 x 50 mm'
+      format1: 'Kích thước linh hoạt'
     },
     type: [1, 4]
   },
@@ -66,14 +66,14 @@ export const allBricks = {
       buildingUrl6: '/products/gach-dac-anh/building-6.jpg',
     },
     brickIntro: `
-      The raw materials are excavated in Weichsel loam layers, the local loam of Aeolian origin dating from the Ice Age.
-      This Loess mainly consists of a silt-like fraction, suited ideally for the manufacturing of hand form bricks.
-      By using specific sand types for surface covering, the desired colour is achieved.
+      Gạch đất nung được làm bằng tay, 100% được làm từ đất sét tự nhiên,
+      không pha than, cát và các loại hóa chất tạo màu, đốt lò thủ công ở nhiệt
+      độ trên 1200 độ C. Sản phẩm có thể sử dụng được cả trong nhà và ngoài trời.
     `,
     specifications: {
-      code: 'BB 8328',
+      code: 'GAD 67',
       color: 'Orange brown with dark shades.',
-      format: 'WF ± 210 x 100 x 50 mm'
+      format1: 'WF ± 210 x 110 x 50 mm'
     },
     type: [1, 4]
   },
@@ -88,14 +88,14 @@ export const allBricks = {
       buildingUrl3: '/products/gach-the-anh/building-3.jpg',
     },
     brickIntro: `
-      The raw materials are excavated in Weichsel loam layers, the local loam of Aeolian origin dating from the Ice Age.
-      This Loess mainly consists of a silt-like fraction, suited ideally for the manufacturing of hand form bricks.
-      By using specific sand types for surface covering, the desired colour is achieved.
+      Gạch đất nung được làm bằng tay, 100% được làm từ đất sét tự nhiên,
+      không pha than, cát và các loại hóa chất tạo màu, đốt lò thủ công ở nhiệt
+      độ trên 1200 độ C. Sản phẩm có thể sử dụng được cả trong nhà và ngoài trời.
     `,
     specifications: {
-      code: 'BB 8328',
+      code: 'GTA 86',
       color: 'Orange brown with dark shades.',
-      format: 'WF ± 210 x 100 x 50 mm'
+      format1: 'WF ± 210 x 55 x 20 mm'
     },
     type: [2, 4]
   },
@@ -110,14 +110,15 @@ export const allBricks = {
       buildingUrl3: '/products/gach-that-co/building-3.jpg',
     },
     brickIntro: `
-      The raw materials are excavated in Weichsel loam layers, the local loam of Aeolian origin dating from the Ice Age.
-      This Loess mainly consists of a silt-like fraction, suited ideally for the manufacturing of hand form bricks.
-      By using specific sand types for surface covering, the desired colour is achieved.
+      Gạch đất nung được làm bằng tay, 100% được làm từ đất sét tự nhiên,
+      không pha than, cát và các loại hóa chất tạo màu, đốt lò thủ công ở nhiệt
+      độ trên 1200 độ C. Sản phẩm có thể sử dụng được cả trong nhà và ngoài trời.
     `,
     specifications: {
-      code: 'BB 8328',
+      code: 'GTC 59',
       color: 'Orange brown with dark shades.',
-      format: 'WF ± 210 x 100 x 50 mm'
+      format1: 'WF ± 290 x 200 x 55 mm',
+      format2: 'WF ± 290 x 140 x 55 mm'
     },
     type: [1, 2, 4]
   },
@@ -140,7 +141,7 @@ export const allBricks = {
   //   specifications: {
   //     code: 'BB 8328',
   //     color: 'Orange brown with dark shades.',
-  //     format: 'WF ± 210 x 100 x 50 mm'
+  //     format1: 'WF ± 210 x 100 x 50 mm'
   //   },
   //   type: [2]
   // },
@@ -168,14 +169,14 @@ export const allBricks = {
       buildingUrl16: '/products/gach-hoa-van/ghv-16.jpg',
     },
     brickIntro: `
-      The raw materials are excavated in Weichsel loam layers, the local loam of Aeolian origin dating from the Ice Age.
-      This Loess mainly consists of a silt-like fraction, suited ideally for the manufacturing of hand form bricks.
-      By using specific sand types for surface covering, the desired colour is achieved.
+      Gạch đất nung được làm bằng tay, 100% được làm từ đất sét tự nhiên,
+      không pha than, cát và các loại hóa chất tạo màu, đốt lò thủ công ở nhiệt
+      độ trên 1200 độ C. Sản phẩm có thể sử dụng được cả trong nhà và ngoài trời.
     `,
     specifications: {
-      code: 'BB 8328',
+      code: 'GHV 59',
       color: 'Orange brown with dark shades.',
-      format: 'WF ± 210 x 100 x 50 mm'
+      format1: 'Kích thước linh hoạt'
     },
     type: [4]
   },
@@ -192,14 +193,14 @@ export const allBricks = {
       buildingUrl5: '/products/gach-bat-trang-co/building-5.jpg',
     },
     brickIntro: `
-      The raw materials are excavated in Weichsel loam layers, the local loam of Aeolian origin dating from the Ice Age.
-      This Loess mainly consists of a silt-like fraction, suited ideally for the manufacturing of hand form bricks.
-      By using specific sand types for surface covering, the desired colour is achieved.
+      Gạch đất nung được làm bằng tay, 100% được làm từ đất sét tự nhiên,
+      không pha than, cát và các loại hóa chất tạo màu, đốt lò thủ công ở nhiệt
+      độ trên 1200 độ C. Sản phẩm có thể sử dụng được cả trong nhà và ngoài trời.
     `,
     specifications: {
-      code: 'BB 8328',
+      code: 'GBT 59',
       color: 'Orange brown with dark shades.',
-      format: 'WF ± 210 x 100 x 50 mm'
+      format1: 'WF ± 290 x 290 x 55 mm'
     },
     type: [3]
   },
@@ -214,14 +215,14 @@ export const allBricks = {
       buildingUrl3: '/products/gach-lat-nen/building-3.jpg',
     },
     brickIntro: `
-      The raw materials are excavated in Weichsel loam layers, the local loam of Aeolian origin dating from the Ice Age.
-      This Loess mainly consists of a silt-like fraction, suited ideally for the manufacturing of hand form bricks.
-      By using specific sand types for surface covering, the desired colour is achieved.
+      Gạch đất nung được làm bằng tay, 100% được làm từ đất sét tự nhiên,
+      không pha than, cát và các loại hóa chất tạo màu, đốt lò thủ công ở nhiệt
+      độ trên 1200 độ C. Sản phẩm có thể sử dụng được cả trong nhà và ngoài trời.
     `,
     specifications: {
-      code: 'BB 8328',
+      code: 'GLN 93',
       color: 'Orange brown with dark shades.',
-      format: 'WF ± 210 x 100 x 50 mm'
+      format1: 'WF ± 290 x 290 x 12 mm'
     },
     type: [3]
   },
@@ -234,14 +235,14 @@ export const allBricks = {
       buildingUrl1: '/products/gach-luc-lang/building-1.jpg',
     },
     brickIntro: `
-      The raw materials are excavated in Weichsel loam layers, the local loam of Aeolian origin dating from the Ice Age.
-      This Loess mainly consists of a silt-like fraction, suited ideally for the manufacturing of hand form bricks.
-      By using specific sand types for surface covering, the desired colour is achieved.
+      Gạch đất nung được làm bằng tay, 100% được làm từ đất sét tự nhiên,
+      không pha than, cát và các loại hóa chất tạo màu, đốt lò thủ công ở nhiệt
+      độ trên 1200 độ C. Sản phẩm có thể sử dụng được cả trong nhà và ngoài trời.
     `,
     specifications: {
-      code: 'BB 8328',
+      code: 'GLG 59',
       color: 'Orange brown with dark shades.',
-      format: 'WF ± 210 x 100 x 50 mm'
+      format1: 'Kích thước linh hoạt'
     },
     type: [3]
   },
@@ -254,14 +255,14 @@ export const allBricks = {
       buildingUrl1: '/products/gach-bat-giac/building-1.jpg',
     },
     brickIntro: `
-      The raw materials are excavated in Weichsel loam layers, the local loam of Aeolian origin dating from the Ice Age.
-      This Loess mainly consists of a silt-like fraction, suited ideally for the manufacturing of hand form bricks.
-      By using specific sand types for surface covering, the desired colour is achieved.
+      Gạch đất nung được làm bằng tay, 100% được làm từ đất sét tự nhiên,
+      không pha than, cát và các loại hóa chất tạo màu, đốt lò thủ công ở nhiệt
+      độ trên 1200 độ C. Sản phẩm có thể sử dụng được cả trong nhà và ngoài trời.
     `,
     specifications: {
-      code: 'BB 8328',
+      code: 'GBG 59',
       color: 'Orange brown with dark shades.',
-      format: 'WF ± 210 x 100 x 50 mm'
+      format1: 'Kích thước linh hoạt'
     },
     type: [3]
   },
@@ -275,14 +276,14 @@ export const allBricks = {
       buildingUrl2: '/products/gach-chu-tho/building-2.jpg',
     },
     brickIntro: `
-      The raw materials are excavated in Weichsel loam layers, the local loam of Aeolian origin dating from the Ice Age.
-      This Loess mainly consists of a silt-like fraction, suited ideally for the manufacturing of hand form bricks.
-      By using specific sand types for surface covering, the desired colour is achieved.
+      Gạch đất nung được làm bằng tay, 100% được làm từ đất sét tự nhiên,
+      không pha than, cát và các loại hóa chất tạo màu, đốt lò thủ công ở nhiệt
+      độ trên 1200 độ C. Sản phẩm có thể sử dụng được cả trong nhà và ngoài trời.
     `,
     specifications: {
-      code: 'BB 8328',
+      code: 'GCT 59',
       color: 'Orange brown with dark shades.',
-      format: 'WF ± 210 x 100 x 50 mm'
+      format1: 'WF ± 110 x 110 x 55 mm'
     },
     type: [4]
   },
@@ -295,14 +296,14 @@ export const allBricks = {
       buildingUrl1: '/products/gach-hoa-chanh/building-1.jpg',
     },
     brickIntro: `
-      The raw materials are excavated in Weichsel loam layers, the local loam of Aeolian origin dating from the Ice Age.
-      This Loess mainly consists of a silt-like fraction, suited ideally for the manufacturing of hand form bricks.
-      By using specific sand types for surface covering, the desired colour is achieved.
+      Gạch đất nung được làm bằng tay, 100% được làm từ đất sét tự nhiên,
+      không pha than, cát và các loại hóa chất tạo màu, đốt lò thủ công ở nhiệt
+      độ trên 1200 độ C. Sản phẩm có thể sử dụng được cả trong nhà và ngoài trời.
     `,
     specifications: {
-      code: 'BB 8328',
+      code: 'GHC 01',
       color: 'Orange brown with dark shades.',
-      format: 'WF ± 210 x 100 x 50 mm'
+      format1: 'WF ± 90 x 90 x 30 mm'
     },
     type: [4]
   },

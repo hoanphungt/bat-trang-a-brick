@@ -132,10 +132,11 @@ const Brick = (props) => {
                 </div>
               ) : null}
 
-              {brick.specifications.format ? (
+              {brick.specifications.format1 ? (
                 <div>
                   <p><b><FormattedMessage id="brick.format" defaultMessage="Brick format" /></b></p>
-                  <p>{brick.specifications.format}</p>
+                  <p>{brick.specifications.format1}</p>
+                  {brick.specifications.format2 ? <p>{brick.specifications.format2}</p> : null}
                 </div>
               ) : null}
             </div>
