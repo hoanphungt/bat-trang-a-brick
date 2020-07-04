@@ -1,10 +1,19 @@
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
 import styles from './Brick.module.css';
 import MainContainer from '../MainContainer';
 import homeStyles from './Home.module.css';
 import { allBricks } from './../../data/bricks';
 
 import { FormattedMessage } from 'react-intl';
+
+// Helper function to scroll to an element
+const scrollToRef = (ref) => {
+  ref.current.scrollIntoView({
+    behavior: 'smooth',
+    block: 'nearest', // for vertical scrolling
+    inline: 'center' // for horizontal scrolling
+  });
+};
 
 const Brick = (props) => {
   const brick = Object.values(allBricks).find(
@@ -15,6 +24,7 @@ const Brick = (props) => {
   const numberOfPhotos = photoUrls.length;
 
   const [id, setId] = useState(0);
+  const selectedImageRef = useRef(null);
 
   // Store height of the "MainPhoto" div
   // and set it for the "SidePhotos" div
@@ -58,7 +68,10 @@ const Brick = (props) => {
             >
               <i
                 className={`fa fa-angle-double-left ${styles.LeftIcon}`}
-                onClick={toPrevious}
+                onClick={() => {
+                  toPrevious();
+                  scrollToRef(selectedImageRef);
+                }}
               />
               <img
                 src={photoUrls[id]}
@@ -66,7 +79,10 @@ const Brick = (props) => {
               />
               <i
                 className={`fa fa-angle-double-right ${styles.RightIcon}`}
-                onClick={toNext}
+                onClick={() => {
+                  toNext();
+                  scrollToRef(selectedImageRef);
+                }}
               />
             </div>
             <div
@@ -78,6 +94,7 @@ const Brick = (props) => {
               {photoUrls.map((url, i) => (
                 <img
                   className={id === i ? styles.SelectedPhoto : ""}
+                  ref={id === i ? selectedImageRef : null}
                   key={i}
                   src={url}
                   alt={url}
