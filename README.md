@@ -30,7 +30,7 @@ A commercial website for a Vietnamese brick manufacturer to promote their produc
 * Run the website locally using `yarn start`
 
 ## Deployment
-Continuous deployment with [Netlify] (https://www.netlify.com/)
+Continuous deployment with [Netlify](https://www.netlify.com/)
 
 ## Author
 [Hoan Phung](https://www.linkedin.com/in/hoanphung)
