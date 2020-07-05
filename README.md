@@ -29,5 +29,8 @@ A commercial website for a Vietnamese brick manufacturer to promote their produc
 * Install the dependencies using `yarn install`
 * Run the website locally using `yarn start`
 
+## Deployment
+Continuous deployment with [Netlify] (https://www.netlify.com/)
+
 ## Author
 [Hoan Phung](https://www.linkedin.com/in/hoanphung)
