@@ -1,4 +1,4 @@
-import React, { useState, useRef } from 'react';
+import React, { useEffect, useState, useRef } from 'react';
 import styles from './Brick.module.css';
 import MainContainer from '../MainContainer';
 import homeStyles from './Home.module.css';
@@ -47,6 +47,13 @@ const Brick = (props) => {
     };
   };
 
+  // Use useEffect to update the scroll position
+  // of the selected image of the brick
+  useEffect(() => {
+    // Auto-scroll to the selected image
+    selectedImageRef && scrollToRef(selectedImageRef);
+  }, [selectedImageRef, id]);
+
   return (
     <MainContainer>
       <div
@@ -68,10 +75,7 @@ const Brick = (props) => {
             >
               <i
                 className={`fa fa-angle-double-left ${styles.LeftIcon}`}
-                onClick={() => {
-                  toPrevious();
-                  scrollToRef(selectedImageRef);
-                }}
+                onClick={toPrevious}
               />
               <img
                 src={photoUrls[id]}
@@ -79,10 +83,7 @@ const Brick = (props) => {
               />
               <i
                 className={`fa fa-angle-double-right ${styles.RightIcon}`}
-                onClick={() => {
-                  toNext();
-                  scrollToRef(selectedImageRef);
-                }}
+                onClick={toNext}
               />
             </div>
             <div
