@@ -35,31 +35,33 @@ const Bricks = () => {
           >
             <FormattedMessage
               id="bricks.para1"
-              defaultMessage="Clay facing bricks are natural, high-quality, user-friendly and easy to maintain.
-              Facing bricks are a sustainable product with a lifetime of more than 100 years.
-              Facing bricks withstand all weather conditions and require no maintenance.
-              Furthermore they are non-combustible and non-flammable."
+              defaultMessage="Bat Trang Ancient Bricks Co., Ltd produces natural, high quality and environmentally friendly clay bricks.
+              Bat Trang ancient bricks are sustainable products, lasting over time making history and memories through their use."
             />
             <br/>
             <br/>
             <FormattedMessage
               id="bricks.para2"
-              defaultMessage="Another advantage of facing bricks is their flexibility.
-              The layout of a building with facing bricks can always be changed,
-              both during the building process and throughout the building's lifetime."
+              defaultMessage="Our products always ensure the integrity of the whole product, so your works will always be cool in the summer and warm in the winter,
+              with thin and light tiles but good compressive strength, tough but not brittle like those which burn with gas or tunnel kilns. Products with red, yellow
+              tones, etc. are all colors of earth and fire, the color of bricks will last forever with no discoloration or moss and can overcome many severe weather
+              conditions without any maintenance, as evidenced by the bricks excavated in the relics of Thang Long Imperial Citadel. Our products are not flammable.
+              Another advantage of our products is their flexibility. The layout of a building is always diverse, with unique design ideas, we always create a product
+              that suits your work, meeting the requirements both during the construction process and throughout the life of the building."
             />
             <br/>
             <br/>
             <FormattedMessage
               id="bricks.para3"
-              defaultMessage="Since Bat Trang Ancient Bricks offers facing bricks in many different colours and sizes,
-              there will always be a facing brick to match your requirements."
+              defaultMessage="The founder, Mr. Le Thu Cam was the only person in Bat Trang village who restored all kinds of products from the Ly,
+              Tran, Le eras, etc., all types of earthenware by hand-made old tools. We always uphold and enhance the traditional values. "
             />
             <br/>
             <br/>
             <FormattedMessage
               id="bricks.para4"
-              defaultMessage="If you are interested in buying facing bricks and need appropriate advice, please contact us!"
+              defaultMessage="Bat Trang Ancient Brick Co., Ltd also provides wall and floor tiles with various colors and sizes.
+              In addition, we also accept orders customized to the needs and wants of our customers."
             />
           </div>
         </div>

@@ -32,17 +32,16 @@ const Home = () => {
         >
           <FormattedMessage
             id="home.intro-para1"
-            defaultMessage="Welcome to the colourful world of clay bricks.
-            Bat Trang Ancient Bricks is the leading supplier and producer of high-quality clay bricks and brick slips.
-            By working with carefully selected international partners, we ensure that our products find their way all over the world."
+            defaultMessage="Bat Trang Ancient Bricks Co. Ltd. is a supplier and manufacturer of high quality terracotta bricks and wall tiles.
+            Our products are carefully manufactured and selected for both domestic and international markets."
           />
           <br/>
           <br/>
           <FormattedMessage
             id="home.intro-para2"
-            defaultMessage="Clay brick and clay brick slips stand out from other bricks by their colour, shape and texture.
-            The hand-formed bricks and brick slips are warm, stylish and made of 100% natural clay.
-            This eco-friendly and  durable building material also lasts a long time. Our products can be used both indoors and outdoors."
+            defaultMessage="Our types of terracotta bricks are put into buildings of memorial houses, pagodas, communal houses, temples and modern houses.
+            Our products stand out from other types of bricks because of their color, shape and texture. Terracotta bricks are made by hand, 100% from natural
+            clay, not mixed with coal, sand and other colored chemicals, manually burned in furnaces at temperatures above 1200°C. Products can be used both indoor and outdoor."
           />
         </div>
         <div
