@@ -6,10 +6,20 @@
   http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd"
 >
 <!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
-
-<url>
-  <loc>https://www.gachngoicobattrang.com/</loc>
-  <lastmod>2020-07-06T08:44:24+00:00</lastmod>
-</url>
-
+  <url>
+    <loc>https://www.gachngoicobattrang.com/</loc>
+    <lastmod>2020-07-06T08:44:24+00:00</lastmod>
+  </url>
+  <url>
+    <loc>https://www.gachngoicobattrang.com/bricks/</loc>
+    <lastmod>2020-07-06T08:44:24+00:00</lastmod>
+  </url>
+  <url>
+    <loc>https://www.gachngoicobattrang.com/aboutus/</loc>
+    <lastmod>2020-07-06T08:44:24+00:00</lastmod>
+  </url>
+  <url>
+    <loc>https://www.gachngoicobattrang.com/contact/</loc>
+    <lastmod>2020-07-06T08:44:24+00:00</lastmod>
+  </url>
 </urlset>
