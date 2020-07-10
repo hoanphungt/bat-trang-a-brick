@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import ReactDOM from 'react-dom';
 import { BrowserRouter as Router } from "react-router-dom";
 import ScrollToTop from './Components/ScrollToTop';
@@ -9,39 +9,31 @@ import { createIntl, createIntlCache, RawIntlProvider } from "react-intl";
 import english from './translations/en.json';
 import vietnamese from './translations/vi.json';
 
-// Get current user's locale
-const getCurrentLocale = () => {
-  if (navigator.languages) {
-    return navigator.languages[0];
-  } else {
-    return navigator.language;
-  };
-};
-const currentLocale = getCurrentLocale();
+const Intl = () => {
+  const [lang, setLang] = useState('vi');
+  console.log('language', lang)
 
-// Set app's language by either current user's locale or their selected language preference
-// currently the app only supports English and Vietnamese with English as default language
-let preferredLocale = localStorage.getItem('preferred-language');
-if (!preferredLocale) {
-  preferredLocale = (
-    currentLocale === 'vi' ? 'vi' : 'en'
-  );
-};
+  const cache = createIntlCache();
+  const intl = createIntl({
+    locale: lang,
+    messages: lang === 'vi' ? vietnamese : english
+  }, cache);
 
-const cache = createIntlCache();
-const intl = createIntl({
-  locale: preferredLocale,
-  messages: preferredLocale === 'vi' ? vietnamese : english
-}, cache);
+  useEffect(() => {}, [lang])
+
+  return (
+    <RawIntlProvider
+      value={intl}
+    >
+      <Router basename={`/${lang}`}>
+        <ScrollToTop />
+        <App lang={lang} setLang={setLang} />
+      </Router>
+    </RawIntlProvider>
+  )
+}
 
 ReactDOM.render(
-  <RawIntlProvider
-    value={intl}
-  >
-    <Router>
-      <ScrollToTop />
-      <App />
-    </Router>
-  </RawIntlProvider>,
+  <Intl />,
   document.getElementById('root')
 );

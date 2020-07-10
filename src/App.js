@@ -12,12 +12,14 @@ import MobileMenu from './Components/MobileMenu';
 import ModalBackground from './Components/ModalBackground';
 import styles from './App.module.css';
 
-const App = () => {
+const App = (props) => {
+  const { setLang } = props;
   const [mobileMenu, setMobileMenu] = useState(false);
 
   return (
     <div className={styles.App}>
       <Header
+        setLang={setLang}
         mobileMenu={mobileMenu}
         setMobileMenu={setMobileMenu}
       />
@@ -27,7 +29,9 @@ const App = () => {
       <Route exact path={'/machines'} component={Machines} />
       <Route exact path={'/aboutus'} component={AboutUs} />
       <Route exact path={'/contact'} component={Contact} />
-      <Footer />
+      <Footer
+        setLang={setLang}
+      />
       {/* Modal background and mobile menu components */}
       <ModalBackground
         mobileMenu={mobileMenu}
@@ -36,6 +40,7 @@ const App = () => {
       <MobileMenu
         mobileMenu={mobileMenu}
         setMobileMenu={setMobileMenu}
+        setLang={setLang}
       />
     </div>
   );

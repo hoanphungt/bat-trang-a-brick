@@ -4,9 +4,7 @@ import styles from './Footer.module.css';
 
 import { FormattedMessage } from 'react-intl';
 
-const Footer = () => {
-  const preferredLocale = localStorage.getItem('preferred-language');
-
+const Footer = (props) => {
   return (
     <div
       className={styles.Footer}
@@ -78,22 +76,12 @@ const Footer = () => {
             <img
               src="/images/flags/uk.png"
               alt="English"
-              onClick={() => {
-                if (preferredLocale !== 'en') {
-                  localStorage.setItem('preferred-language', 'en');
-                  window.location.reload();
-                };
-              }}
+              onClick={() => props.setLang('en')}
             />
             <img
               src="/images/flags/vn.png"
               alt="Vietnam"
-              onClick={() => {
-                if (preferredLocale !== 'vi') {
-                  localStorage.setItem('preferred-language', 'vi');
-                  window.location.reload();
-                };
-              }}
+              onClick={() => props.setLang('vi')}
             />
           </div>
         </div>

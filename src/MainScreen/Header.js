@@ -6,7 +6,7 @@ import Language from '../Components/Language';
 import LogoYear from '../Components/LogoYear';
 import styles from './Header.module.css';
 
-const HeaderDesktop = () => {
+const HeaderDesktop = (props) => {
   return (
     <div
       className={styles.Header}
@@ -14,7 +14,7 @@ const HeaderDesktop = () => {
       <LogoHolder />
       <TopMenu />
       <LogoYear />
-      <Language />
+      <Language setLang={props.setLang} />
     </div>
   );
 };
@@ -53,7 +53,9 @@ const Header = (props) => {
 
   // Render different headers based on window innerWidth (at 1000px)
   return width > 1000 ? (
-    <HeaderDesktop />
+    <HeaderDesktop
+      setLang={props.setLang}
+    />
   ) : (
     <HeaderMobile
       mobileMenu={props.mobileMenu}
