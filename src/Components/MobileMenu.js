@@ -5,8 +5,6 @@ import styles from './MobileMenu.module.css';
 import { FormattedMessage } from 'react-intl';
 
 const MobileMenu = (props) => {
-  const preferredLocale = localStorage.getItem('preferred-language');
-
   const closeMobileMenu = () => {
     props.setMobileMenu(false);
   };
@@ -70,10 +68,7 @@ const MobileMenu = (props) => {
           className={styles.MenuLink}
           onClick={() => {
             closeMobileMenu();
-            if (preferredLocale !== 'en') {
-              localStorage.setItem('preferred-language', 'en');
-              window.location.reload();
-            };
+            props.setLang('en');
           }}
         >
           <FormattedMessage id="footer.english" defaultMessage="EN"/>
@@ -82,10 +77,7 @@ const MobileMenu = (props) => {
           className={styles.MenuLink}
           onClick={() => {
             closeMobileMenu();
-            if (preferredLocale !== 'vi') {
-              localStorage.setItem('preferred-language', 'vi');
-              window.location.reload();
-            };
+            props.setLang('vi');
           }}
         >
           <FormattedMessage id="footer.vietnamese" defaultMessage="VN"/>

@@ -3,9 +3,7 @@ import styles from './Language.module.css';
 
 import { FormattedMessage } from 'react-intl';
 
-const Language = () => {
-  const preferredLocale = localStorage.getItem('preferred-language');
-
+const Language = (props) => {
   return (
     <div
       className={styles.Language}
@@ -14,22 +12,12 @@ const Language = () => {
       <img
         src="/images/flags/uk.png"
         alt="English"
-        onClick={() => {
-          if (preferredLocale !== 'en') {
-            localStorage.setItem('preferred-language', 'en');
-            window.location.reload();
-          };
-        }}
+        onClick={() => props.setLang('en')}
       />
       <img
         src="/images/flags/vn.png"
         alt="Vietnam"
-        onClick={() => {
-          if (preferredLocale !== 'vi') {
-            localStorage.setItem('preferred-language', 'vi');
-            window.location.reload();
-          };
-        }}
+        onClick={() => props.setLang('vi')}
       />
     </div>
   )
