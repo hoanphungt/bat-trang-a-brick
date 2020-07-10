@@ -1,11 +1,13 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
 import styles from './Footer.module.css';
 
 import { FormattedMessage } from 'react-intl';
+import { IntlContext } from '../IntlContext';
 
 const Footer = () => {
   const preferredLocale = localStorage.getItem('preferred-language');
+  const { switchToEnglish, switchToVietnamese } = useContext(IntlContext);
 
   return (
     <div
@@ -75,26 +77,20 @@ const Footer = () => {
           <div
             className={styles.LanguageSelection}
           >
-            <img
-              src="/images/flags/uk.png"
-              alt="English"
-              onClick={() => {
-                if (preferredLocale !== 'en') {
-                  localStorage.setItem('preferred-language', 'en');
-                  window.location.reload();
-                };
-              }}
-            />
-            <img
-              src="/images/flags/vn.png"
-              alt="Vietnam"
-              onClick={() => {
-                if (preferredLocale !== 'vi') {
-                  localStorage.setItem('preferred-language', 'vi');
-                  window.location.reload();
-                };
-              }}
-            />
+            <a href={"/en"}>
+              <img
+                src="/images/flags/uk.png"
+                alt="English"
+                // onClick={switchToEnglish}
+              />
+            </a>
+            <a href={"/vi"}>
+              <img
+                src="/images/flags/vn.png"
+                alt="Vietnam"
+                // onClick={switchToVietnamese}
+              />
+            </a>
           </div>
         </div>
       </div>

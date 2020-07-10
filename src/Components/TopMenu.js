@@ -1,10 +1,12 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { NavLink } from 'react-router-dom';
 import styles from './TopMenu.module.css';
 
 import { FormattedMessage } from 'react-intl';
+import { IntlContext } from '../IntlContext';
 
 const TopMenu = () => {
+  const { locale } = useContext(IntlContext);
   return (
     <div
       className={styles.TopMenu}
@@ -12,7 +14,7 @@ const TopMenu = () => {
       <div
         className={styles.TopMenuContent}
       >
-        <NavLink to='/bricks' activeClassName={styles.ActiveNav}>
+        <NavLink to={`/${locale}/bricks`} activeClassName={styles.ActiveNav}>
           <FormattedMessage id="topMenu.bricks" defaultMessage="Bricks" />
         </NavLink>
         <NavLink to='/machines' activeClassName={styles.ActiveNav}>          
