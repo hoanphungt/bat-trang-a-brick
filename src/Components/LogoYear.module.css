@@ -4,3 +4,10 @@
   top: 7.5rem;
   right: 1rem;
 }
+
+@media only screen and (max-width: 1000px) {
+  .LogoYear {
+    top: -1.7rem;
+    right: 0;
+  }
+}
