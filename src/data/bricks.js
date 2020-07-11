@@ -30,7 +30,7 @@ export const allBricks = {
       <FormattedMessage
         id="allBricks.gachSanMy-intro"
         defaultMessage="Terracotta bricks made by hand, 100% from natural clay, not mixed with coal,
-        sand and other colored chemicals, manually burned in furnaces at temperatures above 1200°C.
+        sand and other colored chemicals, manually burned in furnaces at temperatures above 1100°C.
         The product can be used both indoor and outdoor."
       />
     ),
@@ -60,7 +60,7 @@ export const allBricks = {
       <FormattedMessage
         id="allBricks.gachSanMy-intro"
         defaultMessage="Terracotta bricks made by hand, 100% from natural clay, not mixed with coal,
-        sand and other colored chemicals, manually burned in furnaces at temperatures above 1200°C.
+        sand and other colored chemicals, manually burned in furnaces at temperatures above 1100°C.
         The product can be used both indoor and outdoor."
       />
     ),
@@ -98,7 +98,7 @@ export const allBricks = {
       <FormattedMessage
         id="allBricks.gachSanMy-intro"
         defaultMessage="Terracotta bricks made by hand, 100% from natural clay, not mixed with coal,
-        sand and other colored chemicals, manually burned in furnaces at temperatures above 1200°C.
+        sand and other colored chemicals, manually burned in furnaces at temperatures above 1100°C.
         The product can be used both indoor and outdoor."
       />
     ),
@@ -128,7 +128,7 @@ export const allBricks = {
       <FormattedMessage
         id="allBricks.gachSanMy-intro"
         defaultMessage="Terracotta bricks made by hand, 100% from natural clay, not mixed with coal,
-        sand and other colored chemicals, manually burned in furnaces at temperatures above 1200°C.
+        sand and other colored chemicals, manually burned in furnaces at temperatures above 1100°C.
         The product can be used both indoor and outdoor."
       />
     ),
@@ -158,7 +158,7 @@ export const allBricks = {
       <FormattedMessage
         id="allBricks.gachSanMy-intro"
         defaultMessage="Terracotta bricks made by hand, 100% from natural clay, not mixed with coal,
-        sand and other colored chemicals, manually burned in furnaces at temperatures above 1200°C.
+        sand and other colored chemicals, manually burned in furnaces at temperatures above 1100°C.
         The product can be used both indoor and outdoor."
       />
     ),
@@ -225,7 +225,7 @@ export const allBricks = {
       <FormattedMessage
         id="allBricks.gachSanMy-intro"
         defaultMessage="Terracotta bricks made by hand, 100% from natural clay, not mixed with coal,
-        sand and other colored chemicals, manually burned in furnaces at temperatures above 1200°C.
+        sand and other colored chemicals, manually burned in furnaces at temperatures above 1100°C.
         The product can be used both indoor and outdoor."
       />
     ),
@@ -262,7 +262,7 @@ export const allBricks = {
       <FormattedMessage
         id="allBricks.gachSanMy-intro"
         defaultMessage="Terracotta bricks made by hand, 100% from natural clay, not mixed with coal,
-        sand and other colored chemicals, manually burned in furnaces at temperatures above 1200°C.
+        sand and other colored chemicals, manually burned in furnaces at temperatures above 1100°C.
         The product can be used both indoor and outdoor."
       />
     ),
@@ -292,7 +292,7 @@ export const allBricks = {
       <FormattedMessage
         id="allBricks.gachSanMy-intro"
         defaultMessage="Terracotta bricks made by hand, 100% from natural clay, not mixed with coal,
-        sand and other colored chemicals, manually burned in furnaces at temperatures above 1200°C.
+        sand and other colored chemicals, manually burned in furnaces at temperatures above 1100°C.
         The product can be used both indoor and outdoor."
       />
     ),
@@ -320,7 +320,7 @@ export const allBricks = {
       <FormattedMessage
         id="allBricks.gachSanMy-intro"
         defaultMessage="Terracotta bricks made by hand, 100% from natural clay, not mixed with coal,
-        sand and other colored chemicals, manually burned in furnaces at temperatures above 1200°C.
+        sand and other colored chemicals, manually burned in furnaces at temperatures above 1100°C.
         The product can be used both indoor and outdoor."
       />
     ),
@@ -353,7 +353,7 @@ export const allBricks = {
       <FormattedMessage
         id="allBricks.gachSanMy-intro"
         defaultMessage="Terracotta bricks made by hand, 100% from natural clay, not mixed with coal,
-        sand and other colored chemicals, manually burned in furnaces at temperatures above 1200°C.
+        sand and other colored chemicals, manually burned in furnaces at temperatures above 1100°C.
         The product can be used both indoor and outdoor."
       />
     ),
@@ -387,7 +387,7 @@ export const allBricks = {
       <FormattedMessage
         id="allBricks.gachSanMy-intro"
         defaultMessage="Terracotta bricks made by hand, 100% from natural clay, not mixed with coal,
-        sand and other colored chemicals, manually burned in furnaces at temperatures above 1200°C.
+        sand and other colored chemicals, manually burned in furnaces at temperatures above 1100°C.
         The product can be used both indoor and outdoor."
       />
     ),
@@ -415,7 +415,7 @@ export const allBricks = {
       <FormattedMessage
         id="allBricks.gachSanMy-intro"
         defaultMessage="Terracotta bricks made by hand, 100% from natural clay, not mixed with coal,
-        sand and other colored chemicals, manually burned in furnaces at temperatures above 1200°C.
+        sand and other colored chemicals, manually burned in furnaces at temperatures above 1100°C.
         The product can be used both indoor and outdoor."
       />
     ),

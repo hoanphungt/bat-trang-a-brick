@@ -41,7 +41,7 @@ const Home = () => {
             id="home.intro-para2"
             defaultMessage="Our types of terracotta bricks are put into buildings of memorial houses, pagodas, communal houses, temples and modern houses.
             Our products stand out from other types of bricks because of their color, shape and texture. Terracotta bricks are made by hand, 100% from natural
-            clay, not mixed with coal, sand and other colored chemicals, manually burned in furnaces at temperatures above 1200°C. Products can be used both indoor and outdoor."
+            clay, not mixed with coal, sand and other colored chemicals, manually burned in furnaces at temperatures above 1100°C. Products can be used both indoor and outdoor."
           />
         </div>
         <div
