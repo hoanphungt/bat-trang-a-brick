@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Helmet } from 'react-helmet';
 import { Link } from 'react-router-dom';
 import MainContainer from '../MainContainer';
 import styles from './Bricks.module.css';
@@ -21,6 +22,17 @@ const Bricks = () => {
 
   return (
     <MainContainer>
+      <Helmet>
+        <title>Gạch cổ Bát Tràng - Các loại sản phẩm gạch trang trí, xây dựng và lát nền</title>
+        <meta
+          name="description"
+          content="Công ty TNHH Gạch Cổ Bát Tràng sản xuất gạch đất sét tự nhiên, chất lượng cao, thân thiện với môi trường.
+          Gạch cổ Bát Tràng là sản phẩm bền vững, trường tồn theo thời gian cùng lịch sử và thời đại.
+          Nhà sáng lập, ông Lê Thu Cẩm là người duy nhất của làng Bát Tràng còn phục hồi các loại sản phẩm từ đời Lý, Trần, Lê, v,v…
+          tất cả các loại đất nung làm thủ công các cụ ngày xưa truyền lại.
+          Các sản phẩm có thể được sử dụng để làm gạch trang trí, xây dựng, lát nền và nhiều mục đích khác cho các công trình cổ và hiện đại."
+        />
+      </Helmet>
       <div
         className={homeStyles.MainContent}
       >

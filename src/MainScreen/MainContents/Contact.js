@@ -1,4 +1,5 @@
 import React from 'react';
+import { Helmet } from 'react-helmet';
 import MapContainer from '../../Components/MapContainer';
 import MainContainer from '../MainContainer';
 import brickStyles from './Bricks.module.css';
@@ -9,6 +10,17 @@ import { FormattedMessage } from 'react-intl';
 const Contact = () => {
   return (
     <MainContainer>
+      <Helmet>
+        <title>Gạch cổ Bát Tràng - Thông tin liên hệ</title>
+        <meta
+          name="description"
+          content="Công ty TNHH Gạch Cổ Bát Tràng.
+          Văn phòng chính: 45 Yên Ninh, Ba Đình, Hà Nội.
+          Nhà máy sản xuất: Đa Tốn, Gia Lâm, Hà Nội.
+          Tel: +84 (0)916082546
+          Email: gachcobattrang@gmail.com"
+        />
+      </Helmet>
       <MapContainer />
       <div
         className={homeStyles.MainContent}

@@ -1,4 +1,5 @@
 import React from 'react';
+import { Helmet } from 'react-helmet';
 import MainContainer from '../MainContainer';
 import brickStyles from './Bricks.module.css';
 import homeStyles from './Home.module.css';
@@ -8,6 +9,16 @@ import { FormattedMessage } from 'react-intl';
 const AboutUs = () => {
   return (
     <MainContainer>
+      <Helmet>
+        <title>Đôi lời về Công ty TNHH Gạch cổ Bát Tràng</title>
+        <meta
+          name="description"
+          content="Gạch cổ Bát Tràng có vai trò không nhỏ trong việc góp phần tạo nên giá trị lịch sử, văn hóa của những di tích cổ.
+          Chính vì vậy, việc thay thế gạch cổ Bát Tràng bằng các loại chất liệu khác đang phá vỡ tổng thể kiến trúc cổ của các di tích này.
+          Các sản phẩm gạch gốm của Công ty Gạch cổ Bát Tràng được cung cấp không những cho việc phục chế các công trình văn hóa, công trình cổ, đình, chùa, nhà thờ tổ, nhà thờ họ, v.v... mà còn được sử dụng trong các biệt thự, nhà dân dụng và được nhiều nhà đầu tư lớn yêu thích lựa chọn và đánh giá cao.
+          Ngoài ra, công ty Gạch cổ Bát Tràng cũng cung cấp các loại máy ngói, máy gạch, máy đùn, máy nghiền, khuôn mẫu và vật liệu chịu lửa cho các nhà máy tuynel, các nhà máy thuộc hệ thống của Viglacera trên khắp cả nước."
+        />
+      </Helmet>
       <div
         className={homeStyles.MainContent}
       >
