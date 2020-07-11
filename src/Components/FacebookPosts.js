@@ -28,19 +28,19 @@ const FacebookPosts = ({ width }) => {
       >
         <div
           className="fb-page"
-          data-href="https://www.facebook.com/CongtyTNHHGachCoBatTrang/"
+          data-href="https://www.facebook.com/gachcobattrangvietnam/"
           data-width={width} // width get from width of popular product's image
           data-tabs={"timeline"}
-          data-small-header={true}
+          // data-small-header={true}
           data-adapt-container-width={true}
           data-hide-cover={false}
           data-show-facepile={false}
         >
           <blockquote
-            cite="https://www.facebook.com/CongtyTNHHGachCoBatTrang/"
+            cite="https://www.facebook.com/gachcobattrangvietnam/"
             className="fb-xfbml-parse-ignore"
           >
-            <a href="https://www.facebook.com/CongtyTNHHGachCoBatTrang/">
+            <a href="https://www.facebook.com/gachcobattrangvietnam/">
               Công ty TNHH Gạch cổ Bát Tràng
             </a>
           </blockquote>
