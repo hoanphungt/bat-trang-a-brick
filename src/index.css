@@ -36,6 +36,6 @@ a {
 }
 
 li {
-  margin-left: 1.6rem;
   margin-bottom: .5rem;
+  list-style-position: inside;
 }
