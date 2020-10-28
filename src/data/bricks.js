@@ -431,4 +431,39 @@ export const allBricks = {
     },
     type: [4]
   },
+  gachMenCo: {
+    id: 12,
+    name: 'gạch men cổ',
+    popular: false,
+    urls: {
+      brickUrl: '/products/gach-men-co/brick.jpg',
+      buildingUrl1: '/products/gach-men-co/building-1.jpg',
+    },
+    brickIntro: '',
+    specifications: {
+      code: 'GMC 01',
+      color: '',
+      format1: ''
+    },
+    type: [3, 4]
+  },
+  chauRua: {
+    id: 14,
+    name: 'chậu rửa men',
+    popular: false,
+    urls: {
+      brickUrl: '/products/chau-rua/product.jpg',
+      buildingUrl1: '/products/chau-rua/product-1.jpg',
+      buildingUrl2: '/products/chau-rua/product-2.jpg',
+      buildingUrl3: '/products/chau-rua/product-3.jpg',
+      buildingUrl4: '/products/chau-rua/product-4.jpg',
+    },
+    brickIntro: '',
+    specifications: {
+      code: 'CR 01',
+      color: '',
+      format1: ''
+    },
+    type: []
+  },
 }
