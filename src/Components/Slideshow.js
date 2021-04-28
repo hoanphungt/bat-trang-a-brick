@@ -78,8 +78,8 @@ const Slideshow = ({ setWidth }) => {
         </div>
       </div>
       <div
-          className={homeStyles.Separator}
-        />
+        className={homeStyles.Separator}
+      />
       <div
         className={styles.Slideshow}
       >

@@ -1,8 +1,3 @@
-.SlideshowContainer {
-  flex: 1;
-  margin: 1%;
-}
-
 .SlideshowBar {
   display: flex;
   flex-direction: row;

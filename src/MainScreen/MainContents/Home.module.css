@@ -28,11 +28,9 @@
 
 .MainBlock {
   margin-top: 4rem;
-  width: 100%;
-
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 3rem;
 }
 
 @media only screen and (max-width: 600px) {
@@ -40,6 +38,6 @@
     font-size: 3rem;
   }
   .MainBlock {
-    flex-direction: column;
+    grid-template-columns: 1fr;
   }
 }
