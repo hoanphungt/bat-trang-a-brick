@@ -86,7 +86,8 @@ const Footer = () => {
               className="fa fa-facebook-square"
               href="https://www.facebook.com/gachcobattrangvietnam/"
               target="blank"
-            ></a>
+              aria-label="Visit our Facebook page"
+            />
           </div>
           <br />
           <br />
