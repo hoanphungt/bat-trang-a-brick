@@ -6,10 +6,11 @@ import homeStyles from "./../MainScreen/MainContents/Home.module.css";
 const FacebookPosts = ({ width }) => {
   useEffect(() => {
     if (window.FB) {
-      // Re-parse facebook component after each render
-      window.FB.XFBML.parse();
+      setTimeout(() => {
+        window.FB.XFBML.parse();
+      }, 100);
     }
-  });
+  }, []);
 
   return (
     <div className={slideshowStyles.SlideshowContainer}>

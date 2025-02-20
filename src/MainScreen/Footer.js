@@ -83,11 +83,12 @@ const Footer = () => {
           <br />
           <div className={styles.SocialIcons}>
             <a
-              className="fa fa-facebook-square"
               href="https://www.facebook.com/gachcobattrangvietnam/"
               target="blank"
-              aria-label="Visit our Facebook page"
-            />
+              aria-label="Facebook"
+            >
+              <i className="fa fa-facebook-square" />
+            </a>
           </div>
           <br />
           <br />
