@@ -1,12 +1,12 @@
-import React, { useState } from 'react';
-import { Helmet } from 'react-helmet';
-import { Link } from 'react-router-dom';
-import MainContainer from '../MainContainer';
-import styles from './Bricks.module.css';
-import homeStyles from './Home.module.css';
-import { allBricks } from './../../data/bricks';
+import React, { useState } from "react";
+import { Helmet } from "react-helmet";
+import { Link } from "react-router-dom";
+import MainContainer from "../MainContainer";
+import styles from "./Bricks.module.css";
+import homeStyles from "./Home.module.css";
+import { allBricks } from "./../../data/bricks";
 
-import { FormattedMessage } from 'react-intl';
+import { FormattedMessage } from "react-intl";
 
 const Bricks = () => {
   // import all bricks from the brick data file
@@ -16,14 +16,17 @@ const Bricks = () => {
   const [brickType, setBrickType] = useState(null);
 
   // filter sorted bricks based on selected brick type
-  const sortedBricks = brickType ? bricks.filter(
-    brick => brick.type && brick.type.includes(brickType)
-  ) : bricks;
+  const sortedBricks = brickType
+    ? bricks.filter((brick) => brick.type && brick.type.includes(brickType))
+    : bricks;
 
   return (
     <MainContainer>
       <Helmet>
-        <title>Gạch cổ Bát Tràng - Các loại sản phẩm gạch trang trí, xây dựng và lát nền</title>
+        <title>
+          Gạch cổ Bát Tràng - Các loại sản phẩm gạch trang trí, xây dựng và lát
+          nền
+        </title>
         <meta
           name="description"
           content="Công ty TNHH Gạch Cổ Bát Tràng sản xuất gạch đất sét tự nhiên, chất lượng cao, thân thiện với môi trường.
@@ -33,25 +36,19 @@ const Bricks = () => {
           Các sản phẩm có thể được sử dụng để làm gạch trang trí, xây dựng, lát nền và nhiều mục đích khác cho các công trình cổ và hiện đại."
         />
       </Helmet>
-      <div
-        className={homeStyles.MainContent}
-      >
-        <div
-          className={styles.Article}
-        >
+      <div className={homeStyles.MainContent}>
+        <div className={styles.Article}>
           <div className={styles.Title}>
             <FormattedMessage id="bricks.title" defaultMessage="Bricks" />
           </div>
-          <div
-            className={styles.Text}
-          >
+          <div className={styles.Text}>
             <FormattedMessage
               id="bricks.para1"
               defaultMessage="Bat Trang Ancient Bricks Co., Ltd produces natural, high quality and environmentally friendly clay bricks.
               Bat Trang ancient bricks are sustainable products, lasting over time making history and memories through their use."
             />
-            <br/>
-            <br/>
+            <br />
+            <br />
             <FormattedMessage
               id="bricks.para2"
               defaultMessage="Our products always ensure the integrity of the whole product, so your works will always be cool in the summer and warm in the winter,
@@ -61,15 +58,15 @@ const Bricks = () => {
               Another advantage of our products is their flexibility. The layout of a building is always diverse, with unique design ideas, we always create a product
               that suits your work, meeting the requirements both during the construction process and throughout the life of the building."
             />
-            <br/>
-            <br/>
+            <br />
+            <br />
             <FormattedMessage
               id="bricks.para3"
               defaultMessage="The founder, Mr. Le Thu Cam was the only person in Bat Trang village who restored all kinds of products from the Ly,
               Tran, Le eras, etc., all types of earthenware by hand-made old tools. We always uphold and enhance the traditional values. "
             />
-            <br/>
-            <br/>
+            <br />
+            <br />
             <FormattedMessage
               id="bricks.para4"
               defaultMessage="Bat Trang Ancient Brick Co., Ltd also provides wall and floor tiles with various colors and sizes.
@@ -77,46 +74,40 @@ const Bricks = () => {
             />
           </div>
         </div>
-        <div
-          className={styles.ProductsContainer}
-        >
-          <div
-            className={styles.ProductFilter}
-          >
-            <button
-              onClick={() => setBrickType(null)}
-            >
-              <FormattedMessage id="bricks.allAssortments" defaultMessage="All assortments" />
+        <div className={styles.ProductsContainer}>
+          <div className={styles.ProductFilter}>
+            <button onClick={() => setBrickType(null)}>
+              <FormattedMessage
+                id="bricks.allAssortments"
+                defaultMessage="All assortments"
+              />
             </button>
-            <button
-              onClick={() => setBrickType(1)}
-            >
-              <FormattedMessage id="bricks.bricksType" defaultMessage="Bricks" />
+            <button onClick={() => setBrickType(1)}>
+              <FormattedMessage
+                id="bricks.bricksType"
+                defaultMessage="Bricks"
+              />
             </button>
-            <button
-              onClick={() => setBrickType(2)}
-            >
-              <FormattedMessage id="bricks.wallTilesType" defaultMessage="Wall Tiles" />
+            <button onClick={() => setBrickType(2)}>
+              <FormattedMessage
+                id="bricks.wallTilesType"
+                defaultMessage="Wall Tiles"
+              />
             </button>
-            <button
-              onClick={() => setBrickType(3)}
-            >
-              <FormattedMessage id="bricks.floorTilesType" defaultMessage="Floor Tiles" />
+            <button onClick={() => setBrickType(3)}>
+              <FormattedMessage
+                id="bricks.floorTilesType"
+                defaultMessage="Floor Tiles"
+              />
             </button>
-            <button
-              onClick={() => setBrickType(4)}
-            >
+            <button onClick={() => setBrickType(4)}>
               <FormattedMessage id="bricks.decorType" defaultMessage="Decor" />
             </button>
           </div>
-          <div
-            className={homeStyles.Separator}
-          />
+          <div className={homeStyles.Separator} />
 
-          <div
-            className={styles.ProductList}
-          >
-            {sortedBricks.map(brick => (
+          <div className={styles.ProductList}>
+            {sortedBricks.map((brick) => (
               <Link
                 to={`/bricks/${brick.id}`}
                 className={styles.ProductWrapper}
@@ -125,12 +116,10 @@ const Bricks = () => {
                 <div
                   className={styles.Product}
                   style={{
-                    backgroundImage: `url(${brick.urls.brickUrl})`
+                    backgroundImage: `url(${brick.urls.brickUrl})`,
                   }}
                 />
-                <div
-                  className={styles.ProductOverlay}
-                >
+                <div className={styles.ProductOverlay}>
                   <div
                     className={`${styles.ProductLayer} ${styles.ProductOnHover}`}
                   />
@@ -145,8 +134,8 @@ const Bricks = () => {
           </div>
         </div>
       </div>
-    </MainContainer>    
-  )
-}
+    </MainContainer>
+  );
+};
 
 export default Bricks;

@@ -1,23 +1,23 @@
-import React, { useEffect, useState, useRef } from 'react';
-import styles from './Brick.module.css';
-import MainContainer from '../MainContainer';
-import homeStyles from './Home.module.css';
-import { allBricks } from './../../data/bricks';
+import React, { useEffect, useState, useRef } from "react";
+import styles from "./Brick.module.css";
+import MainContainer from "../MainContainer";
+import homeStyles from "./Home.module.css";
+import { allBricks } from "./../../data/bricks";
 
-import { FormattedMessage } from 'react-intl';
+import { FormattedMessage } from "react-intl";
 
 // Helper function to scroll to an element
 const scrollToRef = (ref) => {
   ref.current.scrollIntoView({
-    behavior: 'smooth',
-    block: 'nearest', // for vertical scrolling
-    inline: 'center' // for horizontal scrolling
+    behavior: "smooth",
+    block: "nearest", // for vertical scrolling
+    inline: "center", // for horizontal scrolling
   });
 };
 
 const Brick = (props) => {
   const brick = Object.values(allBricks).find(
-    brick => brick.id === Number(props.match.params.id)
+    (brick) => brick.id === Number(props.match.params.id),
   );
 
   const photoUrls = Object.values(brick.urls);
@@ -36,15 +36,15 @@ const Brick = (props) => {
       setId(id - 1);
     } else {
       setId(numberOfPhotos - 1);
-    };
+    }
   };
 
   const toNext = () => {
-    if (id < (numberOfPhotos - 1)) {
+    if (id < numberOfPhotos - 1) {
       setId(id + 1);
     } else {
       setId(0);
-    };
+    }
   };
 
   // Use useEffect to update the scroll position
@@ -56,31 +56,20 @@ const Brick = (props) => {
 
   return (
     <MainContainer>
-      <div
-        className={styles.BrickContainer}
-      >
-        <div
-          className={`${homeStyles.MainContent} ${styles.BrickContent}`}
-        >
-          <div
-            className={homeStyles.Separator}
-          />
-          <div
-            className={styles.ProductPhotos}
-          >
+      <div className={styles.BrickContainer}>
+        <div className={`${homeStyles.MainContent} ${styles.BrickContent}`}>
+          <div className={homeStyles.Separator} />
+          <div className={styles.ProductPhotos}>
             <div
               className={styles.MainPhoto}
               // Store height of the MainPhoto div
-              onLoad={e => setHeight(e.currentTarget.clientHeight)}
+              onLoad={(e) => setHeight(e.currentTarget.clientHeight)}
             >
               <i
                 className={`fa fa-angle-double-left ${styles.LeftIcon}`}
                 onClick={toPrevious}
               />
-              <img
-                src={photoUrls[id]}
-                alt="brick"
-              />
+              <img src={photoUrls[id]} alt="brick" />
               <i
                 className={`fa fa-angle-double-right ${styles.RightIcon}`}
                 onClick={toNext}
@@ -104,65 +93,77 @@ const Brick = (props) => {
               ))}
             </div>
           </div>
-          <div
-            className={styles.ProductDetails}
-          >
-            <div
-              className={styles.ProductIntro}
-            >
-              <span
-                className={styles.ProductTitle}
-              >
+          <div className={styles.ProductDetails}>
+            <div className={styles.ProductIntro}>
+              <span className={styles.ProductTitle}>
                 <span
                   className={styles.BackToBricks}
-                  onClick={() => props.history.push('/bricks')}
+                  onClick={() => props.history.push("/bricks")}
                 >
-                  <FormattedMessage id="bricks.shortTitle" defaultMessage="Bricks" />
-                </span> / {brick.name}
+                  <FormattedMessage
+                    id="bricks.shortTitle"
+                    defaultMessage="Bricks"
+                  />
+                </span>{" "}
+                / {brick.name}
               </span>
-              <br/>
-              <span>{brick.brickIntro ? brick.brickIntro : ''}</span>
+              <br />
+              <span>{brick.brickIntro ? brick.brickIntro : ""}</span>
             </div>
-            <div
-              className={styles.ProductSpecs}
-            >
-              <p
-                className={styles.ProductTitle}
-              >
+            <div className={styles.ProductSpecs}>
+              <p className={styles.ProductTitle}>
                 <FormattedMessage id="brick.specs" defaultMessage="Specs" />
               </p>
-              <br/>
+              <br />
               {brick.specifications.code ? (
-                <div
-                  className={styles.ProductCode}
-                >
-                  <p><b><FormattedMessage id="brick.code" defaultMessage="Code"/></b></p>
+                <div className={styles.ProductCode}>
+                  <p>
+                    <b>
+                      <FormattedMessage id="brick.code" defaultMessage="Code" />
+                    </b>
+                  </p>
                   <p>{brick.specifications.code}</p>
-                  <br/>
+                  <br />
                 </div>
               ) : null}
 
               {brick.specifications.color ? (
                 <div>
-                  <p><b><FormattedMessage id="brick.color" defaultMessage="Color" /></b></p>
+                  <p>
+                    <b>
+                      <FormattedMessage
+                        id="brick.color"
+                        defaultMessage="Color"
+                      />
+                    </b>
+                  </p>
                   <p>{brick.specifications.color}</p>
-                  <br/>
+                  <br />
                 </div>
               ) : null}
 
               {brick.specifications.format1 ? (
                 <div>
-                  <p><b><FormattedMessage id="brick.format" defaultMessage="Brick format" /></b></p>
+                  <p>
+                    <b>
+                      <FormattedMessage
+                        id="brick.format"
+                        defaultMessage="Brick format"
+                      />
+                    </b>
+                  </p>
                   <p>{brick.specifications.format1}</p>
-                  {brick.specifications.format2 ? <p>{brick.specifications.format2}</p> : null}
+                  {brick.specifications.format2 ? (
+                    <p>{brick.specifications.format2}</p>
+                  ) : null}
                 </div>
               ) : null}
             </div>
           </div>
         </div>
       </div>
-    </MainContainer>   
-  )
-}
+    </MainContainer>
+  );
+};
 
 export default Brick;

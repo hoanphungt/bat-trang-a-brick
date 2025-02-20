@@ -1,31 +1,21 @@
-import React, { useEffect } from 'react';
-import styles from './FacebookPosts.module.css';
-import slideshowStyles from './Slideshow.module.css';
-import homeStyles from './../MainScreen/MainContents/Home.module.css';
+import React, { useEffect } from "react";
+import styles from "./FacebookPosts.module.css";
+import slideshowStyles from "./Slideshow.module.css";
+import homeStyles from "./../MainScreen/MainContents/Home.module.css";
 
 const FacebookPosts = ({ width }) => {
   useEffect(() => {
     if (window.FB) {
       // Re-parse facebook component after each render
       window.FB.XFBML.parse();
-    };
+    }
   });
 
   return (
-    <div
-      className={slideshowStyles.SlideshowContainer}
-    >
-      <div
-        className={slideshowStyles.SlideshowTitle}
-      >
-        Facebook
-      </div>
-      <div
-        className={homeStyles.Separator}
-      />
-      <div
-        className={styles.FacebookPosts}
-      >
+    <div className={slideshowStyles.SlideshowContainer}>
+      <div className={slideshowStyles.SlideshowTitle}>Facebook</div>
+      <div className={homeStyles.Separator} />
+      <div className={styles.FacebookPosts}>
         <div
           className="fb-page"
           data-href="https://www.facebook.com/gachcobattrangvietnam/"
@@ -47,7 +37,7 @@ const FacebookPosts = ({ width }) => {
         </div>
       </div>
     </div>
-  )
+  );
 };
 
 export default FacebookPosts;

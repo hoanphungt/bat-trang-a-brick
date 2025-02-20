@@ -1,10 +1,10 @@
-import React from 'react';
-import { Helmet } from 'react-helmet';
-import MainContainer from '../MainContainer';
-import brickStyles from './Bricks.module.css';
-import homeStyles from './Home.module.css';
+import React from "react";
+import { Helmet } from "react-helmet";
+import MainContainer from "../MainContainer";
+import brickStyles from "./Bricks.module.css";
+import homeStyles from "./Home.module.css";
 
-import { FormattedMessage } from 'react-intl';
+import { FormattedMessage } from "react-intl";
 
 const AboutUs = () => {
   return (
@@ -19,22 +19,15 @@ const AboutUs = () => {
           Ngoài ra, công ty Gạch cổ Bát Tràng cũng cung cấp các loại máy ngói, máy gạch, máy đùn, máy nghiền, khuôn mẫu và vật liệu chịu lửa cho các nhà máy tuynel, các nhà máy thuộc hệ thống của Viglacera trên khắp cả nước."
         />
       </Helmet>
-      <div
-        className={homeStyles.MainContent}
-      >
-        <div
-          className={brickStyles.Article}
-        >
+      <div className={homeStyles.MainContent}>
+        <div className={brickStyles.Article}>
           <div className={brickStyles.Title}>
             <FormattedMessage id="aboutUs.title" defaultMessage="About us" />
           </div>
-          <div
-            className={brickStyles.Text}
-            style={{ whiteSpace: "pre-line" }}
-          >
+          <div className={brickStyles.Text} style={{ whiteSpace: "pre-line" }}>
             <FormattedMessage
               id="aboutUs.text"
-              values={{ b: text => <b>{text}</b>}}
+              values={{ b: (text) => <b>{text}</b> }}
               defaultMessage={`"Bat Trang ancient bricks play a significant role in contributing to the historical and cultural value of ancient relics. Therefore, the replacement of ancient Bat Trang bricks with other materials is breaking the overall ancient architecture of these relics" - <b>Dr. Hoang Dao Cuong - Director of the Institute of Conservation of Monuments</b>.
 
               Bat Trang bricks are used to build Thang Long Imperial Citadel and most palaces, temples and pagodas throughout Vietnam. Trained up from the experience accumulated over 500 years of our ancestors, Bat Trang Ancient Bricks Co., Ltd. has inherited, developed and put into each quintessential products of the nation through the talented hands of our restorers.
@@ -70,8 +63,8 @@ const AboutUs = () => {
           </div>
         </div>
       </div>
-    </MainContainer>    
-  )
-}
+    </MainContainer>
+  );
+};
 
 export default AboutUs;
